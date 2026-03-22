@@ -40,6 +40,35 @@ Core/
 <br>
 
 The project is divided into logical layers:
-- **HW** - low-level hardware interaction  
-- **Render** - drawing and graphics handling  
+- **HW** - low-level hardware interaction
+- **Render** - drawing and graphics handling
 - **UI** - high-level user interface elements
+
+<br>
+
+---
+
+## 🤝 Contributing
+This project is not actively maintained, but you are welcome to fork it for personal use or experimentation.
+
+<br>
+
+---
+
+## 📄 License
+This project is released under the **MIT License**. See the [LICENSE](./LICENSE) file for full details.
+
+<br>
+
+You are free to:
+- Use, copy, and modify the code for personal or commercial projects.
+- Distribute and sublicense your modifications.
+
+<br>
+
+You must:  
+- Include the original license and copyright notice in your distributed code.
+
+<br>
+
+> Including a license in your project is important because it tells others exactly what they **can and cannot do** with your code, protecting both you and anyone who wants to use it.
