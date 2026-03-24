@@ -132,7 +132,7 @@ Example screens available in the project:
 
 ---
 
-## 🎮 Hardware Setup
+## ⚙️ Hardware Setup
 
 This project uses a **Thumb Joystick with button v2** (Iduino ST1079) as the primary input device for navigating the UI.
 
