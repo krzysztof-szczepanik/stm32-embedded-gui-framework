@@ -112,9 +112,9 @@ Example screens available in the project:
         <td align="center"><strong>Settings Screen</strong></td>
     </tr>
     <tr>
-        <td><img src="Core/Docs/assets/modes_screen.jpg" alt="Modes Screen" height="420px" /></td>
-        <td><img src="Core/Docs/assets/main_screen.jpg" alt="Main Screen" height="420px" /></td>
-        <td><img src="Core/Docs/assets/settings_screen.jpg" alt="Settings Screen" height="420px" /></td>
+        <td><img src="Docs/assets/modes_screen.jpg" alt="Modes Screen" height="420px" /></td>
+        <td><img src="Docs/assets/main_screen.jpg" alt="Main Screen" height="420px" /></td>
+        <td><img src="Docs/assets/settings_screen.jpg" alt="Settings Screen" height="420px" /></td>
     </tr>
 </table>
 
@@ -134,8 +134,8 @@ This project uses a **Thumb Joystick with button v2** (Iduino ST1079) as the pri
         <td align="center"><strong>Joystick Overview</strong></td>
     </tr>
     <tr>
-        <td><img src="Core/Docs/assets/hardware.jpg" alt="Hardware" height="460px" /></td>
-        <td><img src="Core/Docs/assets/joystick.jpg" alt="Joystick" height="460px" /></td>
+        <td><img src="Docs/assets/hardware.jpg" alt="Hardware" height="460px" /></td>
+        <td><img src="Docs/assets/joystick.jpg" alt="Joystick" height="460px" /></td>
     </tr>
 </table>
 
