@@ -89,7 +89,7 @@ The project is divided into logical layers:
 
 ## 🎬 Demo
 
-Demonstration of the framework running on the STM32F429I-DISC1 board, using the built-in example (**washing machine controller**).
+Demonstration of the framework running on the **STM32F429I-DISC1** board, using the built-in example (**washing machine controller**).
 
 <br>
 
