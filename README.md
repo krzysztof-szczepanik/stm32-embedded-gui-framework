@@ -57,11 +57,14 @@ The project is divided into logical layers:
 <br>
 
 ### Setup
-1. Clone the repository:
-   ```
-   git clone https://github.com/krzysztof-szczepanik/stm32-embedded-gui-framework.git
-   ```
+1. Get the project:
+   - **Option 1: Download ZIP** - click the Code → Download ZIP button on GitHub, then extract it to a folder.
 
+   - **Option 2: Clone the repository (requires Git)**
+     ```
+     git clone https://github.com/krzysztof-szczepanik/stm32-embedded-gui-framework.git
+     ```
+     
 3. Open STM32CubeIDE.
 
 4. Import the project:
@@ -76,7 +79,7 @@ The project is divided into logical layers:
 <br>
 
 ### Notes
-- The project already contains a working example (**washing machine UI simulation**).
+- The project already contains a working built-in example (**washing machine controller**).
 - It is designed as a complete framework, not a standalone library.
 - Porting to other hardware may require changes in the **HW layer**.
 
@@ -86,7 +89,7 @@ The project is divided into logical layers:
 
 ## 🎬 Demo
 
-Example of the framework running on the STM32 board (washing machine UI simulation):
+Demonstration of the framework running on the STM32F429I-DISC1 board, using the built-in example (**washing machine controller**).
 
 ![Demo](assets/demo.gif)
 
@@ -98,14 +101,20 @@ Example of the framework running on the STM32 board (washing machine UI simulati
 
 Example screens available in the project:
 
-### Main Screen
-![Main Screen](assets/main_screen.jpg)
+<br>
 
-### Settings Screen
-![Settings Screen](assets/settings_screen.jpg)
-
-### Modes Screen
-![Modes Screen](assets/modes_screen.jpg)
+<table>
+    <tr>
+        <td align="center"><strong>Modes Screen</strong></td>
+        <td align="center"><strong>Main Screen</strong></td>
+        <td align="center"><strong>Settings Screen</strong></td>
+    </tr>
+    <tr>
+        <td><img src="assets/modes_screen.jpg" alt="Modes Screen" height="420px" /></td>
+        <td><img src="assets/main_screen.jpg" alt="Main Screen" height="420px" /></td>
+        <td><img src="assets/settings_screen.jpg" alt="Settings Screen" height="420px" /></td>
+    </tr>
+</table>
 
 <br>
 
@@ -115,29 +124,81 @@ Example screens available in the project:
 
 This project uses a **Thumb Joystick with button v2** (Iduino ST1079) as the primary input device for navigating the UI.
 
-#### Joystick Overview
-![Joystick](assets/joystick.jpg)  
-The joystick module includes an analog stick for X/Y axes and a built-in button.
+<br>
 
-#### Connection Overview
-![Hardware Setup](assets/hardware.jpg)  
-The joystick connects to the STM32F429I-DISC1 board and a breadboard for easy prototyping. This setup allows analog reading for X/Y axes and digital read for the button press.
+<table>
+    <tr>
+        <td align="center"><strong>Connection Overview</strong></td>
+        <td align="center"><strong>Joystick Overview</strong></td>
+    </tr>
+    <tr>
+        <td><img src="assets/hardware.jpg" alt="Hardware" height="460px" /></td>
+        <td><img src="assets/joystick.jpg" alt="Joystick" height="460px" /></td>
+    </tr>
+</table>
 
-#### Joystick Pin Mapping
+<br>
 
-| Joystick Pin | STM32 Pin        | Notes                  |
-|--------------|-----------------|-----------------------|
-| GND          | GND             | Ground                |
-| +5V          | +3V             | Joystick power supply |
-| VRx          | PC1 (ADC1_IN11) | X-axis (analog read)  |
-| VRy          | PC2 (ADC1_IN12) | Y-axis (analog read)  |
-| SW           | PC3             | Button press          |
+The joystick connects to the **STM32F429I-DISC1** board via a breadboard, which allows for easy prototyping. This setup allows analog reading for X/Y axes and digital read for the button press.
 
-#### Notes
+<br>
+
+<div align="center">
+
+**Joystick Pin Mapping**
+
+<table>
+    <tr align="center">
+        <th>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Joystick Pin
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            STM32 Pin
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Notes
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+    </tr>
+    <tr align="center">
+        <td>GND</td>
+        <td>GND</td>
+        <td>Ground</td>
+    </tr>
+    <tr align="center">
+        <td>+5V</td>
+        <td>+3V</td>
+        <td>Joystick power supply</td>
+    </tr>
+    <tr align="center">
+        <td>VRx</td>
+        <td>PC1 (ADC1_IN11)</td>
+        <td>X-axis (analog read)</td>
+    </tr>
+    <tr align="center">
+        <td>VRy</td>
+        <td>PC2 (ADC1_IN12)</td>
+        <td>Y-axis (analog read)</td>
+    </tr>
+    <tr align="center">
+        <td>SW</td>
+        <td>PC3</td>
+        <td>Button press</td>
+    </tr>
+</table>
+
+</div>
+
+<br>
+
+### Notes
 - Make sure to provide power to the joystick (+3V on the board, not +5V).  
-- The X and Y axes use the STM32 ADC for analog input.  
-- The button press is read digitally via pin PC3.  
-- This setup corresponds to the **washing machine UI example** included in the project.
+- This setup corresponds to the **washing machine controller example** included in the project, which can be run directly on the **STM32F429I-DISC1** board.
 
 <br>
 
