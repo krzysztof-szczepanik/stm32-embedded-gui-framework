@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['footer_0',['footer',['../ui__footer_8h.html#a32664005999facc604ca64614af9d722',1,'ui_footer.h']]],
+  ['footer_5falign_5fhorizontal_1',['footer_align_horizontal',['../ui__footer_8h.html#af22f16453447a71e1285f7ef0e6726b2',1,'ui_footer.h']]],
+  ['footer_5falign_5fvertical_2',['footer_align_vertical',['../ui__footer_8h.html#a6b31808903da6f4f0446891a1f19eccd',1,'ui_footer.h']]],
+  ['footer_5fbackground_5fcolor_3',['footer_background_color',['../ui__footer_8h.html#a113448eb910842a6af64ec6ec0dee797',1,'ui_footer.h']]],
+  ['footer_5fborder_5fcolor_4',['footer_border_color',['../ui__footer_8h.html#aa43003812b66a262aed1e3952168dae9',1,'ui_footer.h']]],
+  ['footer_5fborder_5fthickness_5',['footer_border_thickness',['../ui__footer_8h.html#a08d89096819e466ff32da84a2debcb55',1,'ui_footer.h']]],
+  ['footer_5ffocusable_6',['footer_focusable',['../ui__footer_8h.html#a8824fcb5334e0df137e87147a2f03bc5',1,'ui_footer.h']]],
+  ['footer_5fheight_7',['footer_height',['../ui__footer_8h.html#a05eda23c6daaa9cab4ee390fb1c491b5',1,'ui_footer.h']]],
+  ['footer_5fpadding_5fbottom_8',['footer_padding_bottom',['../ui__footer_8h.html#ab7a3f830a0e72a346128eefee7ae6951',1,'ui_footer.h']]],
+  ['footer_5fpadding_5fleft_9',['footer_padding_left',['../ui__footer_8h.html#ade8a2c367fda09e00c8f654b4ddf2d42',1,'ui_footer.h']]],
+  ['footer_5fpadding_5fright_10',['footer_padding_right',['../ui__footer_8h.html#a5f97a8f5e1e01d3155189941186065d3',1,'ui_footer.h']]],
+  ['footer_5fpadding_5ftop_11',['footer_padding_top',['../ui__footer_8h.html#a91dc2da1ccc4c69225af82d4869067d4',1,'ui_footer.h']]],
+  ['footer_5fparent_12',['footer_parent',['../ui__footer_8h.html#a6d612764d969480424921dac2601f397',1,'ui_footer.h']]],
+  ['footer_5fspacing_13',['footer_spacing',['../ui__footer_8h.html#ab6f05fbe581a0cae8bacfad9d2ae677c',1,'ui_footer.h']]],
+  ['footer_5fstretch_14',['footer_stretch',['../ui__footer_8h.html#aa0002c9757f530c20dc936ece832a3e8',1,'ui_footer.h']]],
+  ['footer_5fwidth_15',['footer_width',['../ui__footer_8h.html#a783e38e24d6c991ca1fc0707259c491d',1,'ui_footer.h']]],
+  ['footer_5fx_16',['footer_x',['../ui__footer_8h.html#a28966aaddf83b252eeaf5bffc83aaed9',1,'ui_footer.h']]],
+  ['footer_5fy_17',['footer_y',['../ui__footer_8h.html#acb6593142a35e86a11c3be35aaf84249',1,'ui_footer.h']]]
+];
