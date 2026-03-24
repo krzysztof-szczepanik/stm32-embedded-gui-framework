@@ -138,7 +138,8 @@ void ui_label_on_blur(ui_widget_t* widget);
  * @param    fmt    Format string.
  * @param    ...    Format arguments.
  *
- * @example
+ * **Example usage:**
+ * @code
  *     ui_label_t label;
  *     ui_label_init(&label, 10, 10, 100, 20);
  *
@@ -149,6 +150,7 @@ void ui_label_on_blur(ui_widget_t* widget);
  *     ui_label_text_format(&label, "Temp: %.1f C", 23.7f);
  *
  *     // The label will automatically use the internal text buffer.
+ * @endcode
  */
 void ui_label_text_format(ui_label_t* label, const char* fmt, ...);
 
