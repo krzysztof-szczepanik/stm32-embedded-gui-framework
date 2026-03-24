@@ -35,7 +35,7 @@ var NAVTREE =
     ] ],
     [ "🎬 Demo", "index.html#autotoc_md12", null ],
     [ "🖥️ UI Screens", "index.html#autotoc_md14", null ],
-    [ "🎮 Hardware Setup", "index.html#autotoc_md16", [
+    [ "⚙️ Hardware Setup", "index.html#autotoc_md16", [
       [ "Notes", "index.html#autotoc_md17", null ]
     ] ],
     [ "🤝 Contributing", "index.html#autotoc_md19", null ],

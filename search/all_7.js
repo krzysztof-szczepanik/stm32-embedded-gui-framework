@@ -6,7 +6,7 @@ var searchData=
   ['handle_5fwidth_3',['handle_width',['../structui__slider__t.html#addbc4adb367d256378e83789d60bd355',1,'ui_slider_t::handle_width'],['../structui__slider__time__t.html#a11d2abddcc8842dac2dad7e06e894df2',1,'ui_slider_time_t::handle_width']]],
   ['hardware_20input_20output_4',['Hardware input output',['../group__hardware__io.html',1,'']]],
   ['hardware_20layer_5',['Hardware Layer',['../group__HW.html',1,'']]],
-  ['hardware_20setup_6',['🎮 Hardware Setup',['../index.html#autotoc_md16',1,'']]],
+  ['hardware_20setup_6',['⚙️ Hardware Setup',['../index.html#autotoc_md16',1,'']]],
   ['hardware_5fio_2ec_7',['hardware_io.c',['../hardware__io_8c.html',1,'']]],
   ['hardware_5fio_2eh_8',['hardware_io.h',['../hardware__io_8h.html',1,'']]],
   ['hbox_9',['HBOX',['../ui__hbox_8h.html#a500b18fc3d4b5aafe188a19f780c139f',1,'ui_hbox.h']]],

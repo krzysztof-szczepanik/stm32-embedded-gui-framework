@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🎮_20hardware_20setup_0',['🎮 Hardware Setup',['../index.html#autotoc_md16',1,'']]]
+  ['🎬_20demo_0',['🎬 Demo',['../index.html#autotoc_md12',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🎬_20demo_0',['🎬 Demo',['../index.html#autotoc_md12',1,'']]]
+  ['✨_20features_0',['✨ Features',['../index.html#autotoc_md3',1,'']]]
 ];
