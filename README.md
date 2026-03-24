@@ -13,6 +13,15 @@ It provides a structured way to build graphical user interfaces, handle renderin
 
 ---
 
+## 📄 Documentation
+
+Full documentation is available here:  
+[View Documentation](https://krzysztof-szczepanik.github.io/stm32-embedded-gui-framework/)
+
+<br>
+
+---
+
 ## ✨ Features
 - Layered architecture: **UI / Render / Hardware**
 - Clear separation between logic and hardware
