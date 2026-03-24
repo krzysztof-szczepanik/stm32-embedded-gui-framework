@@ -1,13 +1,13 @@
 var searchData=
 [
   ['screen_0',['SCREEN',['../ui__screen_8h.html#a1cc759b1ed4cd05a83e129c193b44fee',1,'ui_screen.h']]],
-  ['screens_1',['screens',['../index.html#autotoc_md14',1,'🖥️ UI Screens'],['../group__UI__Screens.html',1,'Screens']]],
-  ['screens_5fdata_2',['screens_data',['../ui__screens__data_8c.html#a153315780ffe47cd49b9a0c5bf178c23',1,'screens_data:&#160;ui_screens_data.c'],['../ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f',1,'screens_data:&#160;ui_screens_data.h']]],
-  ['sector_3',['sector',['../structui__modes__screen__t.html#a30279e29945aca6df5dfcc93adc9de5d',1,'ui_modes_screen_t::sector'],['../structui__settings__screen__t.html#a3c13ce90ac254c4f8e9b8487b47e1be3',1,'ui_settings_screen_t::sector'],['../structui__main__screen__t.html#ab513133acac94f1725c30112c14502e7',1,'ui_main_screen_t::sector']]],
+  ['screens_1',['Screens',['../index.html#autotoc_md14',1,'🖥️ UI Screens'],['../group__UI__Screens.html',1,'Screens']]],
+  ['screens_5fdata_2',['screens_data',['../ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f',1,'screens_data:&#160;ui_screens_data.h'],['../ui__screens__data_8c.html#a153315780ffe47cd49b9a0c5bf178c23',1,'screens_data:&#160;ui_screens_data.c']]],
+  ['sector_3',['sector',['../structui__main__screen__t.html#ab513133acac94f1725c30112c14502e7',1,'ui_main_screen_t::sector'],['../structui__modes__screen__t.html#a30279e29945aca6df5dfcc93adc9de5d',1,'ui_modes_screen_t::sector'],['../structui__settings__screen__t.html#a3c13ce90ac254c4f8e9b8487b47e1be3',1,'ui_settings_screen_t::sector']]],
   ['selected_4',['selected',['../structui__toggle__t.html#a9f19583d448a80a2513d081053ab8fb6',1,'ui_toggle_t']]],
   ['selected_5fcolor_5',['selected_color',['../structui__toggle__t.html#ac552c36e9f544022cab6061c99605ae3',1,'ui_toggle_t']]],
   ['separator_5fx_5foffset_6',['separator_x_offset',['../structui__label__value__t.html#aa2ceab30ad1a416a8294fc903ca5f4a8',1,'ui_label_value_t::separator_x_offset'],['../structui__list__item__t.html#a52fb4210b662d1ce2a8997da7e5c1cf6',1,'ui_list_item_t::separator_x_offset']]],
-  ['setup_7',['setup',['../index.html#autotoc_md16',1,'🎮 Hardware Setup'],['../index.html#autotoc_md9',1,'Setup']]],
+  ['setup_7',['Setup',['../index.html#autotoc_md16',1,'🎮 Hardware Setup'],['../index.html#autotoc_md9',1,'Setup']]],
   ['slider_8',['SLIDER',['../ui__slider_8h.html#a313ace227b7d4279a18de09d892a1d2c',1,'ui_slider.h']]],
   ['slider_5fauto_5fset_5fvalue_9',['slider_auto_set_value',['../ui__slider_8h.html#a08be7f17e833ee063f450a9cfd922401',1,'ui_slider.h']]],
   ['slider_5fbackground_5fcolor_10',['slider_background_color',['../ui__slider_8h.html#a035283501a9bc0ca847edeebdc4fc350',1,'ui_slider.h']]],
@@ -49,11 +49,11 @@ var searchData=
   ['slider_5fwidth_46',['slider_width',['../ui__slider_8h.html#ab1f1f1015991fca12ba1b2523ca09936',1,'ui_slider.h']]],
   ['slider_5fx_47',['slider_x',['../ui__slider_8h.html#a9beef177f2912e349277f89423d6124e',1,'ui_slider.h']]],
   ['slider_5fy_48',['slider_y',['../ui__slider_8h.html#a53df0837c6319e03cd201d10a03fe402',1,'ui_slider.h']]],
-  ['spacing_49',['spacing',['../structui__vbox__t.html#a6ca5369d7060b780cf66083445bbc40d',1,'ui_vbox_t::spacing'],['../structui__hbox__t.html#a149bb76997cb929483cedeab08c33a78',1,'ui_hbox_t::spacing']]],
+  ['spacing_49',['spacing',['../structui__hbox__t.html#a149bb76997cb929483cedeab08c33a78',1,'ui_hbox_t::spacing'],['../structui__vbox__t.html#a6ca5369d7060b780cf66083445bbc40d',1,'ui_vbox_t::spacing']]],
   ['started_50',['🚀 Getting Started',['../index.html#autotoc_md7',1,'']]],
-  ['step_51',['step',['../structui__slider__t.html#adbf29f6400f9e4e6881b93eea0a19547',1,'ui_slider_t::step'],['../structui__slider__time__t.html#a1848c26d62c0ebd7d918bdb894fe32e0',1,'ui_slider_time_t::step'],['../structui__progress__bar__t.html#a27730ec54ed214bf8be0bb2f2d1fc6e2',1,'ui_progress_bar_t::step']]],
+  ['step_51',['step',['../structui__progress__bar__t.html#a27730ec54ed214bf8be0bb2f2d1fc6e2',1,'ui_progress_bar_t::step'],['../structui__slider__t.html#adbf29f6400f9e4e6881b93eea0a19547',1,'ui_slider_t::step'],['../structui__slider__time__t.html#a1848c26d62c0ebd7d918bdb894fe32e0',1,'ui_slider_time_t::step']]],
   ['stm32_20embedded_20gui_20framework_52',['STM32 Embedded GUI Framework',['../index.html',1,'']]],
   ['stretch_53',['stretch',['../structui__hbox__t.html#a9d5b231f402447acbbe3dae72e876ab8',1,'ui_hbox_t::stretch'],['../structui__vbox__t.html#a7245e9334fde351cd5f920ac50d259f3',1,'ui_vbox_t::stretch']]],
   ['structure_54',['🏗️ Project Structure',['../index.html#autotoc_md5',1,'']]],
-  ['suffix_55',['suffix',['../structui__slider__t.html#ad46adda54a547ad9694260e1a4f3ff71',1,'ui_slider_t::suffix'],['../structui__progress__bar__t.html#aec57ac121f581cae80da4bdec5c83902',1,'ui_progress_bar_t::suffix']]]
+  ['suffix_55',['suffix',['../structui__progress__bar__t.html#aec57ac121f581cae80da4bdec5c83902',1,'ui_progress_bar_t::suffix'],['../structui__slider__t.html#ad46adda54a547ad9694260e1a4f3ff71',1,'ui_slider_t::suffix']]]
 ];

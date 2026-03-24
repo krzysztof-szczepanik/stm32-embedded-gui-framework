@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['embedded_20gui_20framework_0',['STM32 Embedded GUI Framework',['../index.html',1,'']]]
+  ['contributing_0',['🤝 Contributing',['../index.html#autotoc_md19',1,'']]]
 ];

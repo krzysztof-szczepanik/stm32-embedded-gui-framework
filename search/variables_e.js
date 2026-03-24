@@ -1,7 +1,7 @@
 var searchData=
 [
   ['screens_5fdata_0',['screens_data',['../ui__screens__data_8c.html#a153315780ffe47cd49b9a0c5bf178c23',1,'ui_screens_data.c']]],
-  ['sector_1',['sector',['../structui__modes__screen__t.html#a30279e29945aca6df5dfcc93adc9de5d',1,'ui_modes_screen_t::sector'],['../structui__settings__screen__t.html#a3c13ce90ac254c4f8e9b8487b47e1be3',1,'ui_settings_screen_t::sector'],['../structui__main__screen__t.html#ab513133acac94f1725c30112c14502e7',1,'ui_main_screen_t::sector']]],
+  ['sector_1',['sector',['../structui__main__screen__t.html#ab513133acac94f1725c30112c14502e7',1,'ui_main_screen_t::sector'],['../structui__modes__screen__t.html#a30279e29945aca6df5dfcc93adc9de5d',1,'ui_modes_screen_t::sector'],['../structui__settings__screen__t.html#a3c13ce90ac254c4f8e9b8487b47e1be3',1,'ui_settings_screen_t::sector']]],
   ['selected_2',['selected',['../structui__toggle__t.html#a9f19583d448a80a2513d081053ab8fb6',1,'ui_toggle_t']]],
   ['selected_5fcolor_3',['selected_color',['../structui__toggle__t.html#ac552c36e9f544022cab6061c99605ae3',1,'ui_toggle_t']]],
   ['separator_5fx_5foffset_4',['separator_x_offset',['../structui__label__value__t.html#aa2ceab30ad1a416a8294fc903ca5f4a8',1,'ui_label_value_t::separator_x_offset'],['../structui__list__item__t.html#a52fb4210b662d1ce2a8997da7e5c1cf6',1,'ui_list_item_t::separator_x_offset']]],
