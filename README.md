@@ -3,7 +3,7 @@
 <br>
 
 ## 📖 Description
-STM32 Embedded GUI Framework is a lightweight and modular GUI framework designed for embedded systems based on STM32 microcontrollers.
+**STM32 Embedded GUI Framework** is a lightweight and modular GUI framework designed for embedded systems based on STM32 microcontrollers.
 
 The project focuses on simplicity, performance, and clean architecture, making it suitable for low-level embedded development without relying on heavy external libraries.
 
