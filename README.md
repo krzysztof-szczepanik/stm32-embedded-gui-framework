@@ -35,6 +35,7 @@ Full documentation is available here:
 ## 🏗️ Project Structure
 ```
 Core/
+│
 ├─ Inc/
 │  ├─ HW/        # Hardware abstraction layer
 │  ├─ Render/    # Rendering interfaces
