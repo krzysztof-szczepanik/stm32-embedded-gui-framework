@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['configure_5fadc_5fregisters_0',['configure_adc_registers',['../group__HW.html#gacc485c8ae5a976ea28eb034c4779f2bc',1,'configure_adc_registers(void):&#160;hardware_io.c'],['../group__HW.html#gacc485c8ae5a976ea28eb034c4779f2bc',1,'configure_adc_registers(void):&#160;hardware_io.c']]],
-  ['configure_5fgpio_5fregisters_1',['configure_gpio_registers',['../group__HW.html#ga310ada93cad97c416bf99dd892db0421',1,'configure_gpio_registers(void):&#160;hardware_io.c'],['../group__HW.html#ga310ada93cad97c416bf99dd892db0421',1,'configure_gpio_registers(void):&#160;hardware_io.c']]],
+  ['configure_5fadc_5fregisters_0',['configure_adc_registers',['../hardware__io_8h.html#acc485c8ae5a976ea28eb034c4779f2bc',1,'configure_adc_registers(void):&#160;hardware_io.c'],['../hardware__io_8c.html#acc485c8ae5a976ea28eb034c4779f2bc',1,'configure_adc_registers(void):&#160;hardware_io.c']]],
+  ['configure_5fgpio_5fregisters_1',['configure_gpio_registers',['../hardware__io_8h.html#a310ada93cad97c416bf99dd892db0421',1,'configure_gpio_registers(void):&#160;hardware_io.c'],['../hardware__io_8c.html#a310ada93cad97c416bf99dd892db0421',1,'configure_gpio_registers(void):&#160;hardware_io.c']]],
   ['container_2',['CONTAINER',['../ui__container_8h.html#a05ac9980ca0f497016dd29178cf599bc',1,'ui_container.h']]],
   ['container_5fbackground_5fcolor_3',['container_background_color',['../ui__container_8h.html#aeb0252742643ace9a52e29f19129dd67',1,'ui_container.h']]],
   ['container_5fborder_5fcolor_4',['container_border_color',['../ui__container_8h.html#a8833f37785a14ae37f33f24af31d83c9',1,'ui_container.h']]],
@@ -18,12 +18,10 @@ var searchData=
   ['container_5fwidth_15',['container_width',['../ui__container_8h.html#affc7671122a8d167448d17905005d627',1,'ui_container.h']]],
   ['container_5fx_16',['container_x',['../ui__container_8h.html#a3f69d05c7533ad85149c08d3bf081783',1,'ui_container.h']]],
   ['container_5fy_17',['container_y',['../ui__container_8h.html#a881f6ddb8e8d94fa778228a9ef6d2cbd',1,'ui_container.h']]],
-  ['containers_18',['Containers',['../group__UI__Containers.html',1,'']]],
-  ['contributing_19',['🤝 Contributing',['../index.html#autotoc_md19',1,'']]],
-  ['core_20',['Core',['../group__UI__Core.html',1,'']]],
-  ['current_5fdirection_21',['current_direction',['../ui__direction_8c.html#a47b7caee8e6b8184e426903450ed90a1',1,'ui_direction.c']]],
-  ['current_5fdisplay_5flayer_22',['current_display_layer',['../lcd__buffer_8c.html#a8a653629d536022bf6dfbb97f7583a07',1,'lcd_buffer.c']]],
-  ['current_5fdraw_5flayer_23',['current_draw_layer',['../lcd__buffer_8c.html#a2a8e167803c83efe4ee3ceb47a2a19d2',1,'lcd_buffer.c']]],
-  ['current_5fscreen_24',['current_screen',['../ui__screen__manager_8c.html#ae6a0004933ef987b16219c16c617867a',1,'ui_screen_manager.c']]],
-  ['current_5fscreen_5fid_25',['current_screen_id',['../ui__screen__manager_8c.html#ab32bcaf2bf2695372ffce5fcfb2ddd04',1,'ui_screen_manager.c']]]
+  ['contributing_18',['🤝 Contributing',['../index.html#autotoc_md19',1,'']]],
+  ['current_5fdirection_19',['current_direction',['../ui__direction_8c.html#a47b7caee8e6b8184e426903450ed90a1',1,'ui_direction.c']]],
+  ['current_5fdisplay_5flayer_20',['current_display_layer',['../lcd__buffer_8c.html#a8a653629d536022bf6dfbb97f7583a07',1,'lcd_buffer.c']]],
+  ['current_5fdraw_5flayer_21',['current_draw_layer',['../lcd__buffer_8c.html#a2a8e167803c83efe4ee3ceb47a2a19d2',1,'lcd_buffer.c']]],
+  ['current_5fscreen_22',['current_screen',['../ui__screen__manager_8c.html#ae6a0004933ef987b16219c16c617867a',1,'ui_screen_manager.c']]],
+  ['current_5fscreen_5fid_23',['current_screen_id',['../ui__screen__manager_8c.html#ab32bcaf2bf2695372ffce5fcfb2ddd04',1,'ui_screen_manager.c']]]
 ];

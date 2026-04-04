@@ -112,11 +112,11 @@ $(function(){initNavTree('lcd__buffer_8c.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aabb47a221bb9e4224e494952b4c10f59" id="r_aabb47a221bb9e4224e494952b4c10f59"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aabb47a221bb9e4224e494952b4c10f59">HAL_LTDC_LineEventCallback</a> (LTDC_HandleTypeDef *<a class="el" href="group__ltdc.html#ga9ede3a77755ec81a9be03423cb915b05">hltdc</a>)</td></tr>
-<tr class="memitem:ga09107cd24ed868833d03ca3982bdaf6e" id="r_ga09107cd24ed868833d03ca3982bdaf6e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__lcd__buffer.html#ga09107cd24ed868833d03ca3982bdaf6e">lcd_buffer_init</a> (void)</td></tr>
-<tr class="memdesc:ga09107cd24ed868833d03ca3982bdaf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the LCD framebuffer module.  <br /></td></tr>
-<tr class="memitem:gaa33a717edc93905e33f29a0ce5333eed" id="r_gaa33a717edc93905e33f29a0ce5333eed"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__lcd__buffer.html#gaa33a717edc93905e33f29a0ce5333eed">lcd_swap_buffers</a> (void)</td></tr>
-<tr class="memdesc:gaa33a717edc93905e33f29a0ce5333eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the current draw and display buffers (double buffering).  <br /></td></tr>
+<tr class="memitem:aabb47a221bb9e4224e494952b4c10f59" id="r_aabb47a221bb9e4224e494952b4c10f59"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aabb47a221bb9e4224e494952b4c10f59">HAL_LTDC_LineEventCallback</a> (LTDC_HandleTypeDef *<a class="el" href="ltdc_8h.html#a9ede3a77755ec81a9be03423cb915b05">hltdc</a>)</td></tr>
+<tr class="memitem:a09107cd24ed868833d03ca3982bdaf6e" id="r_a09107cd24ed868833d03ca3982bdaf6e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a09107cd24ed868833d03ca3982bdaf6e">lcd_buffer_init</a> (void)</td></tr>
+<tr class="memdesc:a09107cd24ed868833d03ca3982bdaf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the LCD framebuffer module.  <br /></td></tr>
+<tr class="memitem:aa33a717edc93905e33f29a0ce5333eed" id="r_aa33a717edc93905e33f29a0ce5333eed"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa33a717edc93905e33f29a0ce5333eed">lcd_swap_buffers</a> (void)</td></tr>
+<tr class="memdesc:aa33a717edc93905e33f29a0ce5333eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the current draw and display buffers (double buffering).  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -154,6 +154,100 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   45</span>    <a class="code hl_variable" href="#a8b9b9bb1c3576900edf02d06e6d55014">ready_to_swap</a> = 1;</div>
 <div class="line"><span class="lineno">   46</span>}</div>
 <div class="ttc" id="alcd__buffer_8c_html_a8b9b9bb1c3576900edf02d06e6d55014"><div class="ttname"><a href="#a8b9b9bb1c3576900edf02d06e6d55014">ready_to_swap</a></div><div class="ttdeci">volatile uint8_t ready_to_swap</div><div class="ttdef"><b>Definition</b> <a href="lcd__buffer_8c_source.html#l00037">lcd_buffer.c:37</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a09107cd24ed868833d03ca3982bdaf6e" name="a09107cd24ed868833d03ca3982bdaf6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09107cd24ed868833d03ca3982bdaf6e">&#9670;&#160;</a></span>lcd_buffer_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_buffer_init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the LCD framebuffer module. </p>
+<p>Sets up background/foreground layers and enables the LTDC line interrupt. Also performs first buffer swap to avoid flickering in foreground layer. </p>
+
+<p class="definition">Definition at line <a class="el" href="lcd__buffer_8c_source.html#l00052">52</a> of file <a class="el" href="lcd__buffer_8c_source.html">lcd_buffer.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>                           {</div>
+<div class="line"><span class="lineno">   53</span>    BSP_LCD_SetLayerVisible(LCD_BACKGROUND_LAYER, ENABLE);</div>
+<div class="line"><span class="lineno">   54</span>    BSP_LCD_SetLayerVisible(LCD_FOREGROUND_LAYER, DISABLE);</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>    <span class="comment">// Select the layer for drawing:</span></div>
+<div class="line"><span class="lineno">   57</span>    BSP_LCD_SelectLayer(<a class="code hl_variable" href="#a2a8e167803c83efe4ee3ceb47a2a19d2">current_draw_layer</a>);</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    <span class="comment">// Enable the LTDC line interrupt:</span></div>
+<div class="line"><span class="lineno">   60</span>    __HAL_LTDC_ENABLE_IT(&amp;<a class="code hl_variable" href="ltdc_8h.html#a9ede3a77755ec81a9be03423cb915b05">hltdc</a>, LTDC_IT_LI);</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    <span class="comment">// First synchronization of LTDC registers (without this, the foreground has garbage and flickering appears):</span></div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_function" href="#aa33a717edc93905e33f29a0ce5333eed">lcd_swap_buffers</a>();</div>
+<div class="line"><span class="lineno">   64</span>}</div>
+<div class="ttc" id="alcd__buffer_8c_html_a2a8e167803c83efe4ee3ceb47a2a19d2"><div class="ttname"><a href="#a2a8e167803c83efe4ee3ceb47a2a19d2">current_draw_layer</a></div><div class="ttdeci">static uint32_t current_draw_layer</div><div class="ttdef"><b>Definition</b> <a href="lcd__buffer_8c_source.html#l00034">lcd_buffer.c:34</a></div></div>
+<div class="ttc" id="alcd__buffer_8c_html_aa33a717edc93905e33f29a0ce5333eed"><div class="ttname"><a href="#aa33a717edc93905e33f29a0ce5333eed">lcd_swap_buffers</a></div><div class="ttdeci">void lcd_swap_buffers(void)</div><div class="ttdoc">Swap the current draw and display buffers (double buffering).</div><div class="ttdef"><b>Definition</b> <a href="lcd__buffer_8c_source.html#l00070">lcd_buffer.c:70</a></div></div>
+<div class="ttc" id="altdc_8h_html_a9ede3a77755ec81a9be03423cb915b05"><div class="ttname"><a href="ltdc_8h.html#a9ede3a77755ec81a9be03423cb915b05">hltdc</a></div><div class="ttdeci">LTDC_HandleTypeDef hltdc</div><div class="ttdoc">Handle structure for LTDC peripheral.</div><div class="ttdef"><b>Definition</b> <a href="ltdc_8c_source.html#l00028">ltdc.c:28</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa33a717edc93905e33f29a0ce5333eed" name="aa33a717edc93905e33f29a0ce5333eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa33a717edc93905e33f29a0ce5333eed">&#9670;&#160;</a></span>lcd_swap_buffers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_swap_buffers </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Swap the current draw and display buffers (double buffering). </p>
+<p>Waits for VSYNC using LTDC line event callback and switches the visible layer with the draw layer. Ensures smooth rendering without tearing. </p>
+
+<p class="definition">Definition at line <a class="el" href="lcd__buffer_8c_source.html#l00070">70</a> of file <a class="el" href="lcd__buffer_8c_source.html">lcd_buffer.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>                            {</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    <span class="comment">// Waiting for the end of the frame (VSYNC) - triggering the interrupt:</span></div>
+<div class="line"><span class="lineno">   73</span>    HAL_LTDC_ProgramLineEvent(&amp;<a class="code hl_variable" href="ltdc_8h.html#a9ede3a77755ec81a9be03423cb915b05">hltdc</a>, <a class="code hl_define" href="lcd_8h.html#a53a8b2a971de4b88047192655a48b651">LCD_HEIGHT</a> + 3 + 2);</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="comment">// CPU waits until the ready_to_swap flag is set to 1, when it is set, it performs the layer swap:</span></div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">while</span> (!<a class="code hl_variable" href="#a8b9b9bb1c3576900edf02d06e6d55014">ready_to_swap</a>);</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_variable" href="#a8b9b9bb1c3576900edf02d06e6d55014">ready_to_swap</a> = 0;</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a8a653629d536022bf6dfbb97f7583a07">current_display_layer</a> == LCD_BACKGROUND_LAYER) {</div>
+<div class="line"><span class="lineno">   80</span>        <span class="comment">// Background was visible -&gt; show foreground:</span></div>
+<div class="line"><span class="lineno">   81</span>        BSP_LCD_SetLayerVisible(LCD_BACKGROUND_LAYER, DISABLE);</div>
+<div class="line"><span class="lineno">   82</span>        BSP_LCD_SetLayerVisible(LCD_FOREGROUND_LAYER, ENABLE);</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="#a8a653629d536022bf6dfbb97f7583a07">current_display_layer</a> = LCD_FOREGROUND_LAYER;</div>
+<div class="line"><span class="lineno">   85</span>        <a class="code hl_variable" href="#a2a8e167803c83efe4ee3ceb47a2a19d2">current_draw_layer</a>    = LCD_BACKGROUND_LAYER;</div>
+<div class="line"><span class="lineno">   86</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   87</span>        <span class="comment">// Foreground was visible -&gt; show background:</span></div>
+<div class="line"><span class="lineno">   88</span>        BSP_LCD_SetLayerVisible(LCD_FOREGROUND_LAYER, DISABLE);</div>
+<div class="line"><span class="lineno">   89</span>        BSP_LCD_SetLayerVisible(LCD_BACKGROUND_LAYER, ENABLE);</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_variable" href="#a8a653629d536022bf6dfbb97f7583a07">current_display_layer</a> = LCD_BACKGROUND_LAYER;</div>
+<div class="line"><span class="lineno">   92</span>        <a class="code hl_variable" href="#a2a8e167803c83efe4ee3ceb47a2a19d2">current_draw_layer</a>    = LCD_FOREGROUND_LAYER;</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    <span class="comment">// Select the invisible layer for drawing:</span></div>
+<div class="line"><span class="lineno">   96</span>    BSP_LCD_SelectLayer(<a class="code hl_variable" href="#a2a8e167803c83efe4ee3ceb47a2a19d2">current_draw_layer</a>);</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <span class="comment">// Immediate application of LTDC configuration changes:</span></div>
+<div class="line"><span class="lineno">   99</span>    HAL_LTDC_Reload(&amp;<a class="code hl_variable" href="ltdc_8h.html#a9ede3a77755ec81a9be03423cb915b05">hltdc</a>, LTDC_RELOAD_VERTICAL_BLANKING);</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">while</span> (<a class="code hl_variable" href="ltdc_8h.html#a9ede3a77755ec81a9be03423cb915b05">hltdc</a>.Instance-&gt;SRCR != 0UL); <span class="comment">// waiting until the reload is complete</span></div>
+<div class="line"><span class="lineno">  101</span>}</div>
+<div class="ttc" id="alcd_8h_html_a53a8b2a971de4b88047192655a48b651"><div class="ttname"><a href="lcd_8h.html#a53a8b2a971de4b88047192655a48b651">LCD_HEIGHT</a></div><div class="ttdeci">#define LCD_HEIGHT</div><div class="ttdef"><b>Definition</b> <a href="lcd_8h_source.html#l00035">lcd.h:35</a></div></div>
+<div class="ttc" id="alcd__buffer_8c_html_a8a653629d536022bf6dfbb97f7583a07"><div class="ttname"><a href="#a8a653629d536022bf6dfbb97f7583a07">current_display_layer</a></div><div class="ttdeci">static uint32_t current_display_layer</div><div class="ttdef"><b>Definition</b> <a href="lcd__buffer_8c_source.html#l00033">lcd_buffer.c:33</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

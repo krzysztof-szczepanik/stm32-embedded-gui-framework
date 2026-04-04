@@ -40,7 +40,6 @@ var NAVTREE =
     ] ],
     [ "🤝 Contributing", "index.html#autotoc_md19", null ],
     [ "📄 License", "index.html#autotoc_md21", null ],
-    [ "Topics", "topics.html", "topics" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -67,11 +66,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"structui__main__screen__t.html#a5f07178dcbd946fc156df270d22572e9",
-"ui__container_8h.html#aeab8bf923af1c0360cdd92bc1da3943f",
-"ui__label_8h.html#a7cffaf7874e236f3ad47f3e97066592c",
-"ui__screen__manager_8c.html#acf8d865b4b4662f4b9086d5f6f1f5ba4",
-"ui__toggle_8h.html#a3d6e9bffbcbf86628d34976ad8de6a38"
+"structui__main__screen__t.html",
+"ui__container_8h.html#acb5f34bf76b4dcc402b9deb17a3232e8",
+"ui__label_8h.html#a517eb17a9c18e21b30ba8c70d705441e",
+"ui__screen__manager_8c.html#a0fce7b6d9a169dbed1e229758e68a7c9",
+"ui__toggle_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

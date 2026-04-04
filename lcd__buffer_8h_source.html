@@ -102,30 +102,28 @@ $(function(){initNavTree('lcd__buffer_8h_source.html','',''); });
 </div><!--header-->
 <div class="contents">
 <a href="lcd__buffer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#ifndef LCD_BUFFER_H</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define LCD_BUFFER_H</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#ifndef LCD_BUFFER_H</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define LCD_BUFFER_H</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="ltdc_8h.html">ltdc.h</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="ltdc_8h.html">ltdc.h</a>&quot;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">// =================== CONSTRUCTOR ===================</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__lcd__buffer.html#ga09107cd24ed868833d03ca3982bdaf6e">lcd_buffer_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// ==================== FUNCTIONS =====================</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__lcd__buffer.html#gaa33a717edc93905e33f29a0ce5333eed">lcd_swap_buffers</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">/* LCD_BUFFER_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> <span class="comment">// lcd_buffer</span></div>
-<div class="ttc" id="agroup__lcd__buffer_html_ga09107cd24ed868833d03ca3982bdaf6e"><div class="ttname"><a href="group__lcd__buffer.html#ga09107cd24ed868833d03ca3982bdaf6e">lcd_buffer_init</a></div><div class="ttdeci">void lcd_buffer_init(void)</div><div class="ttdoc">Initialize the LCD framebuffer module.</div><div class="ttdef"><b>Definition</b> <a href="lcd__buffer_8c_source.html#l00052">lcd_buffer.c:52</a></div></div>
-<div class="ttc" id="agroup__lcd__buffer_html_gaa33a717edc93905e33f29a0ce5333eed"><div class="ttname"><a href="group__lcd__buffer.html#gaa33a717edc93905e33f29a0ce5333eed">lcd_swap_buffers</a></div><div class="ttdeci">void lcd_swap_buffers(void)</div><div class="ttdoc">Swap the current draw and display buffers (double buffering).</div><div class="ttdef"><b>Definition</b> <a href="lcd__buffer_8c_source.html#l00070">lcd_buffer.c:70</a></div></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// =================== CONSTRUCTOR ===================</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">void</span> <a class="code hl_function" href="lcd__buffer_8h.html#a09107cd24ed868833d03ca3982bdaf6e">lcd_buffer_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// ==================== FUNCTIONS =====================</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keywordtype">void</span> <a class="code hl_function" href="lcd__buffer_8h.html#aa33a717edc93905e33f29a0ce5333eed">lcd_swap_buffers</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">/* LCD_BUFFER_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="alcd__buffer_8h_html_a09107cd24ed868833d03ca3982bdaf6e"><div class="ttname"><a href="lcd__buffer_8h.html#a09107cd24ed868833d03ca3982bdaf6e">lcd_buffer_init</a></div><div class="ttdeci">void lcd_buffer_init(void)</div><div class="ttdoc">Initialize the LCD framebuffer module.</div><div class="ttdef"><b>Definition</b> <a href="lcd__buffer_8c_source.html#l00052">lcd_buffer.c:52</a></div></div>
+<div class="ttc" id="alcd__buffer_8h_html_aa33a717edc93905e33f29a0ce5333eed"><div class="ttname"><a href="lcd__buffer_8h.html#aa33a717edc93905e33f29a0ce5333eed">lcd_swap_buffers</a></div><div class="ttdeci">void lcd_swap_buffers(void)</div><div class="ttdoc">Swap the current draw and display buffers (double buffering).</div><div class="ttdef"><b>Definition</b> <a href="lcd__buffer_8c_source.html#l00070">lcd_buffer.c:70</a></div></div>
 <div class="ttc" id="altdc_8h_html"><div class="ttname"><a href="ltdc_8h.html">ltdc.h</a></div><div class="ttdoc">LTDC peripheral handle interface.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -111,14 +111,14 @@ $(function(){initNavTree('hardware__io_8h.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gacc485c8ae5a976ea28eb034c4779f2bc" id="r_gacc485c8ae5a976ea28eb034c4779f2bc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__HW.html#gacc485c8ae5a976ea28eb034c4779f2bc">configure_adc_registers</a> (void)</td></tr>
-<tr class="memdesc:gacc485c8ae5a976ea28eb034c4779f2bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure ADC registers and pins for analog input.  <br /></td></tr>
-<tr class="memitem:ga310ada93cad97c416bf99dd892db0421" id="r_ga310ada93cad97c416bf99dd892db0421"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__HW.html#ga310ada93cad97c416bf99dd892db0421">configure_gpio_registers</a> (void)</td></tr>
-<tr class="memdesc:ga310ada93cad97c416bf99dd892db0421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure GPIO registers for input pins.  <br /></td></tr>
-<tr class="memitem:gac0662bd507fcfaf6c1e812af347d2c3a" id="r_gac0662bd507fcfaf6c1e812af347d2c3a"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="group__HW.html#gac0662bd507fcfaf6c1e812af347d2c3a">read_adc</a> (uint8_t channel)</td></tr>
-<tr class="memdesc:gac0662bd507fcfaf6c1e812af347d2c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a value from the ADC.  <br /></td></tr>
-<tr class="memitem:ga5603137550feb0e8a5bcfb2b7dfed225" id="r_ga5603137550feb0e8a5bcfb2b7dfed225"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="group__HW.html#ga5603137550feb0e8a5bcfb2b7dfed225">read_gpio_pin</a> (GPIO_TypeDef *port, uint16_t pin)</td></tr>
-<tr class="memdesc:ga5603137550feb0e8a5bcfb2b7dfed225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the state of a GPIO pin.  <br /></td></tr>
+<tr class="memitem:acc485c8ae5a976ea28eb034c4779f2bc" id="r_acc485c8ae5a976ea28eb034c4779f2bc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acc485c8ae5a976ea28eb034c4779f2bc">configure_adc_registers</a> (void)</td></tr>
+<tr class="memdesc:acc485c8ae5a976ea28eb034c4779f2bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure ADC registers and pins for analog input.  <br /></td></tr>
+<tr class="memitem:a310ada93cad97c416bf99dd892db0421" id="r_a310ada93cad97c416bf99dd892db0421"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a310ada93cad97c416bf99dd892db0421">configure_gpio_registers</a> (void)</td></tr>
+<tr class="memdesc:a310ada93cad97c416bf99dd892db0421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure GPIO registers for input pins.  <br /></td></tr>
+<tr class="memitem:ac0662bd507fcfaf6c1e812af347d2c3a" id="r_ac0662bd507fcfaf6c1e812af347d2c3a"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#ac0662bd507fcfaf6c1e812af347d2c3a">read_adc</a> (uint8_t channel)</td></tr>
+<tr class="memdesc:ac0662bd507fcfaf6c1e812af347d2c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a value from the ADC.  <br /></td></tr>
+<tr class="memitem:a5603137550feb0e8a5bcfb2b7dfed225" id="r_a5603137550feb0e8a5bcfb2b7dfed225"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a5603137550feb0e8a5bcfb2b7dfed225">read_gpio_pin</a> (GPIO_TypeDef *port, uint16_t pin)</td></tr>
+<tr class="memdesc:a5603137550feb0e8a5bcfb2b7dfed225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the state of a GPIO pin.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ADC and GPIO low‑level access interface. </p>
@@ -128,7 +128,168 @@ Functions</h2></td></tr>
 <p>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </p>
 
 <p class="definition">Definition in file <a class="el" href="hardware__io_8h_source.html">hardware_io.h</a>.</p>
-</div></div><!-- contents -->
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="acc485c8ae5a976ea28eb034c4779f2bc" name="acc485c8ae5a976ea28eb034c4779f2bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc485c8ae5a976ea28eb034c4779f2bc">&#9670;&#160;</a></span>configure_adc_registers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void configure_adc_registers </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure ADC registers and pins for analog input. </p>
+<dl class="section note"><dt>Note</dt><dd>Configures PC1 and PC2 as analog inputs for ADC1, sets sample time, enables ADC and does short stabilization delay. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="hardware__io_8c_source.html#l00024">24</a> of file <a class="el" href="hardware__io_8c_source.html">hardware_io.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                                   {</div>
+<div class="line"><span class="lineno">   25</span>    <span class="comment">// Enable clocks:</span></div>
+<div class="line"><span class="lineno">   26</span>    RCC-&gt;AHB1ENR |= RCC_AHB1ENR_GPIOCEN; <span class="comment">// GPIOC clock</span></div>
+<div class="line"><span class="lineno">   27</span>    RCC-&gt;APB2ENR |= RCC_APB2ENR_ADC1EN;  <span class="comment">// ADC1 clock</span></div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    <span class="comment">// Configure PC1 and PC2 as analog pins:</span></div>
+<div class="line"><span class="lineno">   30</span>    GPIOC-&gt;MODER |= (3U &lt;&lt; (1 * 2)) | (3U &lt;&lt; (2 * 2));    <span class="comment">// set as GPIO_ANALOG</span></div>
+<div class="line"><span class="lineno">   31</span>    GPIOC-&gt;PUPDR &amp;= ~((3U &lt;&lt; (1 * 2)) | (3U &lt;&lt; (2 * 2))); <span class="comment">// disable pull-up/down</span></div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    <span class="comment">// Basic ADC configuration:</span></div>
+<div class="line"><span class="lineno">   34</span>    ADC1-&gt;CR1 = 0; <span class="comment">// reset control register 1</span></div>
+<div class="line"><span class="lineno">   35</span>    ADC1-&gt;CR2 = 0; <span class="comment">// reset control register 2</span></div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment">// Set sample time for channels 11 and 12:</span></div>
+<div class="line"><span class="lineno">   38</span>    ADC1-&gt;SMPR1 |= (7U &lt;&lt; ((11 - 10) * 3)) | (7U &lt;&lt; ((12 - 10) * 3));</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// Convert only 1 channel at a time:</span></div>
+<div class="line"><span class="lineno">   41</span>    ADC1-&gt;SQR1 &amp;= ~ADC_SQR1_L;</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    <span class="comment">// Enable ADC:</span></div>
+<div class="line"><span class="lineno">   44</span>    ADC1-&gt;CR2 |= ADC_CR2_ADON;</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>    <span class="comment">// Short stabilization delay:</span></div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">for</span> (<span class="keyword">volatile</span> <span class="keywordtype">int</span> i = 0; i &lt; 10000; ++i);</div>
+<div class="line"><span class="lineno">   48</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a310ada93cad97c416bf99dd892db0421" name="a310ada93cad97c416bf99dd892db0421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310ada93cad97c416bf99dd892db0421">&#9670;&#160;</a></span>configure_gpio_registers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void configure_gpio_registers </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure GPIO registers for input pins. </p>
+<dl class="section note"><dt>Note</dt><dd>Enables clock for GPIOC and sets PC3 as input with pull-up. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="hardware__io_8c_source.html#l00050">50</a> of file <a class="el" href="hardware__io_8c_source.html">hardware_io.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>                                    {</div>
+<div class="line"><span class="lineno">   51</span>    <span class="comment">// Enable clock for GPIOC:</span></div>
+<div class="line"><span class="lineno">   52</span>    RCC-&gt;AHB1ENR |= RCC_AHB1ENR_GPIOCEN;</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>    <span class="comment">// Set PC3 as input:</span></div>
+<div class="line"><span class="lineno">   55</span>    GPIOC-&gt;MODER &amp;= ~(3U &lt;&lt; (3 * 2));</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>    <span class="comment">// Disable pull-down, enable pull-up:</span></div>
+<div class="line"><span class="lineno">   58</span>    GPIOC-&gt;PUPDR &amp;= ~(3U &lt;&lt; (3 * 2)); <span class="comment">// clear pull-up/pull-down</span></div>
+<div class="line"><span class="lineno">   59</span>    GPIOC-&gt;PUPDR |=  (1U &lt;&lt; (3 * 2)); <span class="comment">// pull-up</span></div>
+<div class="line"><span class="lineno">   60</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac0662bd507fcfaf6c1e812af347d2c3a" name="ac0662bd507fcfaf6c1e812af347d2c3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0662bd507fcfaf6c1e812af347d2c3a">&#9670;&#160;</a></span>read_adc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t read_adc </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a value from the ADC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>ADC channel number (11 = PC1, 12 = PC2) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>12-bit ADC conversion result </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="hardware__io_8c_source.html#l00062">62</a> of file <a class="el" href="hardware__io_8c_source.html">hardware_io.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>                                   {</div>
+<div class="line"><span class="lineno">   63</span>    <span class="comment">// Select ADC channel:</span></div>
+<div class="line"><span class="lineno">   64</span>    ADC1-&gt;SQR3 = channel &amp; 0x1F;</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>    <span class="comment">// Clear end-of-conversion flag:</span></div>
+<div class="line"><span class="lineno">   67</span>    ADC1-&gt;SR &amp;= ~ADC_SR_EOC;</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>    <span class="comment">// Start conversion:</span></div>
+<div class="line"><span class="lineno">   70</span>    ADC1-&gt;CR2 |= ADC_CR2_SWSTART;</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    <span class="comment">// Wait for conversion to complete:</span></div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">while</span> (!(ADC1-&gt;SR &amp; ADC_SR_EOC));</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="comment">// Return conversion result:</span></div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">return</span> ADC1-&gt;DR;</div>
+<div class="line"><span class="lineno">   77</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5603137550feb0e8a5bcfb2b7dfed225" name="a5603137550feb0e8a5bcfb2b7dfed225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5603137550feb0e8a5bcfb2b7dfed225">&#9670;&#160;</a></span>read_gpio_pin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t read_gpio_pin </td>
+          <td>(</td>
+          <td class="paramtype">GPIO_TypeDef *</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>pin</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the state of a GPIO pin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>GPIO port </td></tr>
+    <tr><td class="paramname">pin</td><td>GPIO pin mask </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if pin is HIGH (not pressed), 0 if LOW (pressed) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="hardware__io_8c_source.html#l00079">79</a> of file <a class="el" href="hardware__io_8c_source.html">hardware_io.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>                                                        {</div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">return</span> (port-&gt;IDR &amp; pin) ? 1 : 0;</div>
+<div class="line"><span class="lineno">   81</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

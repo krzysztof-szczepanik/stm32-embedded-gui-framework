@@ -112,10 +112,10 @@ $(function(){initNavTree('tim_8h.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga31f6f787777409af5ed0d131b52b7988" id="r_ga31f6f787777409af5ed0d131b52b7988"><td class="memItemLeft">TIM_HandleTypeDef&#160;</td><td class="memItemRight"><a class="el" href="group__tim.html#ga31f6f787777409af5ed0d131b52b7988">htim9</a></td></tr>
-<tr class="memdesc:ga31f6f787777409af5ed0d131b52b7988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle structure for TIM9 peripheral.  <br /></td></tr>
-<tr class="memitem:ga9ed7acb25d410677b14de3eed7b1fe42" id="r_ga9ed7acb25d410677b14de3eed7b1fe42"><td class="memItemLeft">volatile bool&#160;</td><td class="memItemRight"><a class="el" href="group__tim.html#ga9ed7acb25d410677b14de3eed7b1fe42">timer_tick</a></td></tr>
-<tr class="memdesc:ga9ed7acb25d410677b14de3eed7b1fe42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag set by TIM9 period elapsed interrupt.  <br /></td></tr>
+<tr class="memitem:a31f6f787777409af5ed0d131b52b7988" id="r_a31f6f787777409af5ed0d131b52b7988"><td class="memItemLeft">TIM_HandleTypeDef&#160;</td><td class="memItemRight"><a class="el" href="#a31f6f787777409af5ed0d131b52b7988">htim9</a></td></tr>
+<tr class="memdesc:a31f6f787777409af5ed0d131b52b7988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle structure for TIM9 peripheral.  <br /></td></tr>
+<tr class="memitem:a9ed7acb25d410677b14de3eed7b1fe42" id="r_a9ed7acb25d410677b14de3eed7b1fe42"><td class="memItemLeft">volatile bool&#160;</td><td class="memItemRight"><a class="el" href="#a9ed7acb25d410677b14de3eed7b1fe42">timer_tick</a></td></tr>
+<tr class="memdesc:a9ed7acb25d410677b14de3eed7b1fe42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag set by TIM9 period elapsed interrupt.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TIM peripheral handle interface. </p>
@@ -125,7 +125,62 @@ Variables</h2></td></tr>
 <p>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </p>
 
 <p class="definition">Definition in file <a class="el" href="tim_8h_source.html">tim.h</a>.</p>
-</div></div><!-- contents -->
+</div><a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a31f6f787777409af5ed0d131b52b7988" name="a31f6f787777409af5ed0d131b52b7988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f6f787777409af5ed0d131b52b7988">&#9670;&#160;</a></span>htim9</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_HandleTypeDef htim9</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handle structure for TIM9 peripheral. </p>
+<dl class="section note"><dt>Note</dt><dd>Must be initialized before starting the timer. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="tim_8c_source.html#l00029">29</a> of file <a class="el" href="tim_8c_source.html">tim.c</a>.</p>
+
+</div>
+</div>
+<a id="a9ed7acb25d410677b14de3eed7b1fe42" name="a9ed7acb25d410677b14de3eed7b1fe42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed7acb25d410677b14de3eed7b1fe42">&#9670;&#160;</a></span>timer_tick</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool timer_tick</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag set by TIM9 period elapsed interrupt. </p>
+<dl class="section note"><dt>Note</dt><dd>Set to true when timer overflows; should be cleared by user code. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="tim_8c_source.html#l00031">31</a> of file <a class="el" href="tim_8c_source.html">tim.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

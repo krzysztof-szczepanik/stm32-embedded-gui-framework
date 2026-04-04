@@ -1,7 +1,7 @@
 var searchData=
 [
   ['screen_0',['SCREEN',['../ui__screen_8h.html#a1cc759b1ed4cd05a83e129c193b44fee',1,'ui_screen.h']]],
-  ['screens_1',['Screens',['../index.html#autotoc_md14',1,'🖥️ UI Screens'],['../group__UI__Screens.html',1,'Screens']]],
+  ['screens_1',['🖥️ UI Screens',['../index.html#autotoc_md14',1,'']]],
   ['screens_5fdata_2',['screens_data',['../ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f',1,'screens_data:&#160;ui_screens_data.h'],['../ui__screens__data_8c.html#a153315780ffe47cd49b9a0c5bf178c23',1,'screens_data:&#160;ui_screens_data.c']]],
   ['sector_3',['sector',['../structui__main__screen__t.html#ab513133acac94f1725c30112c14502e7',1,'ui_main_screen_t::sector'],['../structui__modes__screen__t.html#a30279e29945aca6df5dfcc93adc9de5d',1,'ui_modes_screen_t::sector'],['../structui__settings__screen__t.html#a3c13ce90ac254c4f8e9b8487b47e1be3',1,'ui_settings_screen_t::sector']]],
   ['selected_4',['selected',['../structui__toggle__t.html#a9f19583d448a80a2513d081053ab8fb6',1,'ui_toggle_t']]],

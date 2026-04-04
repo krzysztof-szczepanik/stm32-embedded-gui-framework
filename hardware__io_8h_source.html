@@ -102,28 +102,26 @@ $(function(){initNavTree('hardware__io_8h_source.html','',''); });
 </div><!--header-->
 <div class="contents">
 <a href="hardware__io_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifndef HARDWARE_IO_H</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define HARDWARE_IO_H</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__HW.html#gacc485c8ae5a976ea28eb034c4779f2bc">configure_adc_registers</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__HW.html#ga310ada93cad97c416bf99dd892db0421">configure_gpio_registers</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>uint16_t <a class="code hl_function" href="group__HW.html#gac0662bd507fcfaf6c1e812af347d2c3a">read_adc</a>(uint8_t channel);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>uint8_t <a class="code hl_function" href="group__HW.html#ga5603137550feb0e8a5bcfb2b7dfed225">read_gpio_pin</a>(GPIO_TypeDef *port, uint16_t pin);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif </span><span class="comment">/* HARDWARE_IO_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> <span class="comment">// hardware_io</span></div>
-<div class="ttc" id="agroup__HW_html_ga310ada93cad97c416bf99dd892db0421"><div class="ttname"><a href="group__HW.html#ga310ada93cad97c416bf99dd892db0421">configure_gpio_registers</a></div><div class="ttdeci">void configure_gpio_registers(void)</div><div class="ttdoc">Configure GPIO registers for input pins.</div><div class="ttdef"><b>Definition</b> <a href="hardware__io_8c_source.html#l00050">hardware_io.c:50</a></div></div>
-<div class="ttc" id="agroup__HW_html_ga5603137550feb0e8a5bcfb2b7dfed225"><div class="ttname"><a href="group__HW.html#ga5603137550feb0e8a5bcfb2b7dfed225">read_gpio_pin</a></div><div class="ttdeci">uint8_t read_gpio_pin(GPIO_TypeDef *port, uint16_t pin)</div><div class="ttdoc">Read the state of a GPIO pin.</div><div class="ttdef"><b>Definition</b> <a href="hardware__io_8c_source.html#l00079">hardware_io.c:79</a></div></div>
-<div class="ttc" id="agroup__HW_html_gac0662bd507fcfaf6c1e812af347d2c3a"><div class="ttname"><a href="group__HW.html#gac0662bd507fcfaf6c1e812af347d2c3a">read_adc</a></div><div class="ttdeci">uint16_t read_adc(uint8_t channel)</div><div class="ttdoc">Read a value from the ADC.</div><div class="ttdef"><b>Definition</b> <a href="hardware__io_8c_source.html#l00062">hardware_io.c:62</a></div></div>
-<div class="ttc" id="agroup__HW_html_gacc485c8ae5a976ea28eb034c4779f2bc"><div class="ttname"><a href="group__HW.html#gacc485c8ae5a976ea28eb034c4779f2bc">configure_adc_registers</a></div><div class="ttdeci">void configure_adc_registers(void)</div><div class="ttdoc">Configure ADC registers and pins for analog input.</div><div class="ttdef"><b>Definition</b> <a href="hardware__io_8c_source.html#l00024">hardware_io.c:24</a></div></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#ifndef HARDWARE_IO_H</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define HARDWARE_IO_H</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">void</span> <a class="code hl_function" href="hardware__io_8h.html#acc485c8ae5a976ea28eb034c4779f2bc">configure_adc_registers</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">void</span> <a class="code hl_function" href="hardware__io_8h.html#a310ada93cad97c416bf99dd892db0421">configure_gpio_registers</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>uint16_t <a class="code hl_function" href="hardware__io_8h.html#ac0662bd507fcfaf6c1e812af347d2c3a">read_adc</a>(uint8_t channel);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>uint8_t <a class="code hl_function" href="hardware__io_8h.html#a5603137550feb0e8a5bcfb2b7dfed225">read_gpio_pin</a>(GPIO_TypeDef *port, uint16_t pin);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">/* HARDWARE_IO_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="ahardware__io_8h_html_a310ada93cad97c416bf99dd892db0421"><div class="ttname"><a href="hardware__io_8h.html#a310ada93cad97c416bf99dd892db0421">configure_gpio_registers</a></div><div class="ttdeci">void configure_gpio_registers(void)</div><div class="ttdoc">Configure GPIO registers for input pins.</div><div class="ttdef"><b>Definition</b> <a href="hardware__io_8c_source.html#l00050">hardware_io.c:50</a></div></div>
+<div class="ttc" id="ahardware__io_8h_html_a5603137550feb0e8a5bcfb2b7dfed225"><div class="ttname"><a href="hardware__io_8h.html#a5603137550feb0e8a5bcfb2b7dfed225">read_gpio_pin</a></div><div class="ttdeci">uint8_t read_gpio_pin(GPIO_TypeDef *port, uint16_t pin)</div><div class="ttdoc">Read the state of a GPIO pin.</div><div class="ttdef"><b>Definition</b> <a href="hardware__io_8c_source.html#l00079">hardware_io.c:79</a></div></div>
+<div class="ttc" id="ahardware__io_8h_html_ac0662bd507fcfaf6c1e812af347d2c3a"><div class="ttname"><a href="hardware__io_8h.html#ac0662bd507fcfaf6c1e812af347d2c3a">read_adc</a></div><div class="ttdeci">uint16_t read_adc(uint8_t channel)</div><div class="ttdoc">Read a value from the ADC.</div><div class="ttdef"><b>Definition</b> <a href="hardware__io_8c_source.html#l00062">hardware_io.c:62</a></div></div>
+<div class="ttc" id="ahardware__io_8h_html_acc485c8ae5a976ea28eb034c4779f2bc"><div class="ttname"><a href="hardware__io_8h.html#acc485c8ae5a976ea28eb034c4779f2bc">configure_adc_registers</a></div><div class="ttdeci">void configure_adc_registers(void)</div><div class="ttdoc">Configure ADC registers and pins for analog input.</div><div class="ttdef"><b>Definition</b> <a href="hardware__io_8c_source.html#l00024">hardware_io.c:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
