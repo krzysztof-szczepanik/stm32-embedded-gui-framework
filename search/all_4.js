@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['embedded_20gui_20framework_0',['STM32 Embedded GUI Framework',['../index.html',1,'']]]
+  ['5_20initialize_20and_20register_20screen_20main_20c_0',['5. Initialize and register screen (main.c)',['../md_pages_2create__screen.html#autotoc_md13',1,'']]]
 ];

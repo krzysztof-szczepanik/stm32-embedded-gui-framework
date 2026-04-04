@@ -1,16 +1,10 @@
 var searchData=
 [
-  ['read_5fadc_0',['read_adc',['../hardware__io_8h.html#ac0662bd507fcfaf6c1e812af347d2c3a',1,'read_adc(uint8_t channel):&#160;hardware_io.c'],['../hardware__io_8c.html#ac0662bd507fcfaf6c1e812af347d2c3a',1,'read_adc(uint8_t channel):&#160;hardware_io.c']]],
-  ['read_5fgpio_5fpin_1',['read_gpio_pin',['../hardware__io_8h.html#a5603137550feb0e8a5bcfb2b7dfed225',1,'read_gpio_pin(GPIO_TypeDef *port, uint16_t pin):&#160;hardware_io.c'],['../hardware__io_8c.html#a5603137550feb0e8a5bcfb2b7dfed225',1,'read_gpio_pin(GPIO_TypeDef *port, uint16_t pin):&#160;hardware_io.c']]],
-  ['ready_5fto_5fswap_2',['ready_to_swap',['../lcd__buffer_8c.html#a8b9b9bb1c3576900edf02d06e6d55014',1,'lcd_buffer.c']]],
-  ['registry_3',['registry',['../ui__screen__manager_8c.html#acf8d865b4b4662f4b9086d5f6f1f5ba4',1,'ui_screen_manager.c']]],
-  ['render_5fx_4',['render_x',['../structui__widget.html#a2ba7f8d115f4c658d9eb5198521293ce',1,'ui_widget']]],
-  ['render_5fy_5',['render_y',['../structui__widget.html#a8e841586295c6a8e5ed1fbb013979741',1,'ui_widget']]],
-  ['requirements_6',['Requirements',['../index.html#autotoc_md8',1,'']]],
-  ['right_5farea_5flabel_7',['right_area_label',['../structui__toggle__t.html#a8d3b8d092fa7ef003536355f077cb8f7',1,'ui_toggle_t']]],
-  ['right_5farea_5flabel_5ffont_8',['right_area_label_font',['../structui__toggle__t.html#a4252d749d9291c4a88d3a262f2797d6d',1,'ui_toggle_t']]],
-  ['right_5farea_5flabel_5ffont_5fcolor_9',['right_area_label_font_color',['../structui__toggle__t.html#acf6b3833013fc0de9ec443a83fceb0c3',1,'ui_toggle_t']]],
-  ['right_5farea_5fpadding_10',['right_area_padding',['../structui__list__item__t.html#a188ba675af7f52c8113f6e68322bf80a',1,'ui_list_item_t']]],
-  ['right_5flabel_11',['right_label',['../structui__label__value__t.html#a8ef6384c298c62802847210c6ea36e6e',1,'ui_label_value_t']]],
-  ['right_5flabel_5fpadding_12',['right_label_padding',['../structui__label__value__t.html#ab2596241b5a244e12da81359d78e1257',1,'ui_label_value_t']]]
+  ['g_5fmain_5fscreen_0',['g_main_screen',['../ui__main__screen_8c.html#a116199fa7674fdb3c4dba11416ea34de',1,'ui_main_screen.c']]],
+  ['g_5fmodes_5fscreen_1',['g_modes_screen',['../ui__modes__screen_8c.html#a3385937edd3f539bc1f005b452bf6e9c',1,'ui_modes_screen.c']]],
+  ['g_5fsettings_5fscreen_2',['g_settings_screen',['../ui__settings__screen_8c.html#a0710dcc4b79c042758600fa9865302a4',1,'ui_settings_screen.c']]],
+  ['get_5fwidgets_3',['get_widgets',['../structui__widget.html#a136363ae4e742b3e36416653dcc3ce70',1,'ui_widget']]],
+  ['getting_20started_4',['🚀 Getting Started',['../index.html#autotoc_md36',1,'']]],
+  ['global_20screen_20access_5',['Global screen access',['../md_pages_2create__screen.html#autotoc_md19',1,'']]],
+  ['gui_20framework_6',['STM32 Embedded GUI Framework',['../index.html',1,'']]]
 ];

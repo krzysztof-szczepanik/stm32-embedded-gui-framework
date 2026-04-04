@@ -1,4 +1,31 @@
 var searchData=
 [
-  ['⚙️_20hardware_20setup_0',['⚙️ Hardware Setup',['../index.html#autotoc_md16',1,'']]]
+  ['padding_5fbottom_0',['padding_bottom',['../structui__container__t.html#a36f0d727efbde4df403b602a96e0439c',1,'ui_container_t::padding_bottom'],['../structui__label__t.html#ae089f31b77240d1c2dfdf25a3364929b',1,'ui_label_t::padding_bottom']]],
+  ['padding_5fleft_1',['padding_left',['../structui__container__t.html#ac9f19318b4142604a7f6fef47c6067e7',1,'ui_container_t::padding_left'],['../structui__label__t.html#a48107739b1456f4cc66c2c1c1fe542f3',1,'ui_label_t::padding_left']]],
+  ['padding_5fright_2',['padding_right',['../structui__container__t.html#aad58de5da0bbb75a4e565fd1b601290f',1,'ui_container_t::padding_right'],['../structui__label__t.html#adef4aa5efcb04bc46af09ec4f348cf6f',1,'ui_label_t::padding_right']]],
+  ['padding_5ftop_3',['padding_top',['../structui__container__t.html#a4a2db9d2c90f755aab26387c4c5051c9',1,'ui_container_t::padding_top'],['../structui__label__t.html#a2c54e53ef1dc63d4822ec7ea82d143dd',1,'ui_label_t::padding_top']]],
+  ['parent_4',['parent',['../structui__widget.html#a222285237e7d1124b3e9caf2419b1fdf',1,'ui_widget']]],
+  ['previous_5fsw_5',['previous_sw',['../joystick_8c.html#ac0bd8d11e37d314508a20502275013dd',1,'joystick.c']]],
+  ['progress_5fbar_6',['PROGRESS_BAR',['../ui__progress__bar_8h.html#a06b27fc5c48fee9b77757de2452f206c',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_7',['progress_bar',['../structui__main__screen__t.html#a1d54872e1c361da5607717ff2bd7b53c',1,'ui_main_screen_t']]],
+  ['progress_5fbar_5fbackground_5fcolor_8',['progress_bar_background_color',['../ui__progress__bar_8h.html#a04cf468963cb02fcbb891bcc027d07e4',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fbar_5fcolor_9',['progress_bar_bar_color',['../ui__progress__bar_8h.html#a2e3fcea669d015a74d4da2b8c123ba4b',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fborder_5fcolor_10',['progress_bar_border_color',['../ui__progress__bar_8h.html#a407419648f448ccc2d06a04a801557cd',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fborder_5fthickness_11',['progress_bar_border_thickness',['../ui__progress__bar_8h.html#a8c7966c44167e7bea0e5c0c6a644b3e7',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5ffocus_5fbackground_5fcolor_12',['progress_bar_focus_background_color',['../ui__progress__bar_8h.html#a86dfcca5f2bce6edc57ab727e801243c',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5ffocus_5fborder_5fcolor_13',['progress_bar_focus_border_color',['../ui__progress__bar_8h.html#a396386f60af5a97b433f30154553b871',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5ffocusable_14',['progress_bar_focusable',['../ui__progress__bar_8h.html#ae9a2a6ae8d1202a27514606a6b35e1af',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fheight_15',['progress_bar_height',['../ui__progress__bar_8h.html#a57cc69041b69220289d17d94de9975ca',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5flabel_5ffont_16',['progress_bar_label_font',['../ui__progress__bar_8h.html#a27d8e77c264a0707a06e8549c462667b',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5flabel_5ffont_5fcolor_17',['progress_bar_label_font_color',['../ui__progress__bar_8h.html#a85c87f0f131b333ff51ee6c438bd7100',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fmax_18',['progress_bar_max',['../ui__progress__bar_8h.html#a0eab51e05b3ad2ab02358f026734a622',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fmin_19',['progress_bar_min',['../ui__progress__bar_8h.html#af1c27c4d3efad611c090c992bb708025',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fset_5fvalue_20',['progress_bar_set_value',['../ui__progress__bar_8h.html#a84182a10c35e106eb781b2cf0b49b395',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fstep_21',['progress_bar_step',['../ui__progress__bar_8h.html#addc7f3a0fc30c8c273dd5ee5c402ff97',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fsuffix_22',['progress_bar_suffix',['../ui__progress__bar_8h.html#a79d24aa6b6ae220bde17a20d8c0e0ded',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fvalue_23',['progress_bar_value',['../ui__progress__bar_8h.html#ae1f8ab4341a858302f9076f92b82b037',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fwidth_24',['progress_bar_width',['../ui__progress__bar_8h.html#a01f8b92527e799aafa0bf477563ce7cb',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fx_25',['progress_bar_x',['../ui__progress__bar_8h.html#a96b53fcd6852d98162aedce8a8a983cb',1,'ui_progress_bar.h']]],
+  ['progress_5fbar_5fy_26',['progress_bar_y',['../ui__progress__bar_8h.html#afdcfaecdccbb15373bcc48ffd7fa5703',1,'ui_progress_bar.h']]],
+  ['project_20structure_27',['🏗️ Project Structure',['../index.html#autotoc_md34',1,'']]]
 ];

@@ -190,7 +190,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   31</span>    <a class="code hl_struct" href="structui__slider__t.html">ui_slider_t</a>* slider_rpm = (<a class="code hl_struct" href="structui__slider__t.html">ui_slider_t</a>*)<a class="code hl_define" href="ui__list__item_8h.html#a367a4f7a5d0d01cc3cfaafa315e4cb45">list_item_object</a>(list_item_rpm);</div>
 <div class="line"><span class="lineno">   32</span>    <a class="code hl_struct" href="structui__slider__t.html">ui_slider_t</a>* slider_temp = (<a class="code hl_struct" href="structui__slider__t.html">ui_slider_t</a>*)<a class="code hl_define" href="ui__list__item_8h.html#a367a4f7a5d0d01cc3cfaafa315e4cb45">list_item_object</a>(list_item_temp);</div>
 <div class="line"><span class="lineno">   33</span> </div>
-<div class="line"><span class="lineno">   34</span>    <a class="code hl_define" href="ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f">screens_data</a>().list_item_time_value = <a class="code hl_define" href="ui__slider__time_8h.html#a6f6824889faedac33578a4d6ebdc2ceb">slider_time_value</a>(slider_time) * 60; <span class="comment">// slider_time.value = minuty, ale my chcemy wyświetlać na main_screen również sekundy</span></div>
+<div class="line"><span class="lineno">   34</span>    <a class="code hl_define" href="ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f">screens_data</a>().list_item_time_value = <a class="code hl_define" href="ui__slider__time_8h.html#a6f6824889faedac33578a4d6ebdc2ceb">slider_time_value</a>(slider_time) * 60; <span class="comment">// slider_time.value has time in minutes, but we want to display seconds on the main_screen too, so we need to convert it to seconds by multiplying by 60</span></div>
 <div class="line"><span class="lineno">   35</span>    <a class="code hl_define" href="ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f">screens_data</a>().list_item_time_value_old = <a class="code hl_define" href="ui__slider__time_8h.html#a6f6824889faedac33578a4d6ebdc2ceb">slider_time_value</a>(slider_time) * 60;</div>
 <div class="line"><span class="lineno">   36</span>    <a class="code hl_define" href="ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f">screens_data</a>().list_item_rpm_value = <a class="code hl_define" href="ui__slider_8h.html#a1e571b94ae3f5efb5d824dc1998756a3">slider_value</a>(slider_rpm);</div>
 <div class="line"><span class="lineno">   37</span>    <a class="code hl_define" href="ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f">screens_data</a>().list_item_temp_value = <a class="code hl_define" href="ui__slider_8h.html#a1e571b94ae3f5efb5d824dc1998756a3">slider_value</a>(slider_temp);</div>
@@ -229,7 +229,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   48</span>    <a class="code hl_variable" href="#a3385937edd3f539bc1f005b452bf6e9c">g_modes_screen</a> = modes_screen;</div>
 <div class="line"><span class="lineno">   49</span> </div>
 <div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>    <span class="comment">// ================== EKRAN ===================</span></div>
+<div class="line"><span class="lineno">   51</span>    <span class="comment">// ================= SCREEN ===================</span></div>
 <div class="line"><span class="lineno">   52</span> </div>
 <div class="line"><span class="lineno">   53</span>    <a class="code hl_typedef" href="ui__screen_8h.html#a01422ebf40b1dd50ae756950c6641b1a">ui_screen_t</a>* screen = &amp;modes_screen-&gt;<a class="code hl_variable" href="structui__modes__screen__t.html#a660593c737a157eb3c2d2ad1abe0c525">base</a>;</div>
 <div class="line"><span class="lineno">   54</span>    <a class="code hl_function" href="ui__screen_8h.html#aeb890b00223a1e52911cb459d3f18169">ui_screen_init</a>(screen);</div>
@@ -266,7 +266,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   85</span>    <a class="code hl_define" href="ui__footer_8h.html#ab6f05fbe581a0cae8bacfad9d2ae677c">footer_spacing</a>(<a class="code hl_define" href="ui__footer_8h.html#a32664005999facc604ca64614af9d722">footer</a>) = 10;</div>
 <div class="line"><span class="lineno">   86</span> </div>
 <div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>    <span class="comment">// ================= SEKTOR ===================</span></div>
+<div class="line"><span class="lineno">   88</span>    <span class="comment">// ================= SECTOR ===================</span></div>
 <div class="line"><span class="lineno">   89</span> </div>
 <div class="line"><span class="lineno">   90</span>    <a class="code hl_struct" href="structui__vbox__t.html">ui_vbox_t</a>* sector = &amp;modes_screen-&gt;<a class="code hl_variable" href="structui__modes__screen__t.html#a30279e29945aca6df5dfcc93adc9de5d">sector</a>;</div>
 <div class="line"><span class="lineno">   91</span>    <a class="code hl_function" href="ui__vbox_8h.html#a217b3fb18f554d3f2aaed10d15453274">ui_vbox_init</a>(sector, 0, <a class="code hl_define" href="ui__header_8h.html#a8409ab330912f9d1f752e98098e29468">header</a>-&gt;base.base.base.height, <a class="code hl_define" href="lcd_8h.html#a19693eac3018d3e7800fde141921b812">LCD_WIDTH</a>, <a class="code hl_define" href="lcd_8h.html#a53a8b2a971de4b88047192655a48b651">LCD_HEIGHT</a> - <a class="code hl_define" href="ui__header_8h.html#a8409ab330912f9d1f752e98098e29468">header</a>-&gt;base.base.base.height - <a class="code hl_define" href="ui__footer_8h.html#a32664005999facc604ca64614af9d722">footer</a>-&gt;base.base.base.height);</div>
@@ -281,9 +281,9 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  100</span> </div>
 <div class="line"><span class="lineno">  101</span> </div>
 <div class="line"><span class="lineno">  102</span> </div>
-<div class="line"><span class="lineno">  103</span>    <span class="comment">// ================= WIDGETY ===================</span></div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">// ================= WIDGETS ===================</span></div>
 <div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    <span class="comment">// Widgety - header:</span></div>
+<div class="line"><span class="lineno">  105</span>    <span class="comment">// Header widgets:</span></div>
 <div class="line"><span class="lineno">  106</span>    <a class="code hl_struct" href="structui__label__t.html">ui_label_t</a>* label = &amp;modes_screen-&gt;<a class="code hl_variable" href="structui__modes__screen__t.html#ae257395f86536cbb79d625afdbb4ae76">label</a>;</div>
 <div class="line"><span class="lineno">  107</span> </div>
 <div class="line"><span class="lineno">  108</span>    <a class="code hl_function" href="ui__label_8h.html#ad13263b8e38ab3b6506a92c09f27f8a9">ui_label_init</a>(label, 0, 0, 100, 50);</div>
@@ -295,7 +295,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  114</span>    <a class="code hl_define" href="ui__label_8h.html#acb970cda6f7d9581514dec500302e8da">label_align_vertical</a>(label) = <a class="code hl_enumvalue" href="ui__align_8h.html#a454b2acded5837a9901d780353a33046a182eeb4cd3a2e1c562e12062e0bdab30">UI_ALIGN_CENTER_Y</a>;</div>
 <div class="line"><span class="lineno">  115</span> </div>
 <div class="line"><span class="lineno">  116</span> </div>
-<div class="line"><span class="lineno">  117</span>    <span class="comment">// Widgety - sector:</span></div>
+<div class="line"><span class="lineno">  117</span>    <span class="comment">// Sector widgets:</span></div>
 <div class="line"><span class="lineno">  118</span>    <a class="code hl_struct" href="structui__list__item__t.html">ui_list_item_t</a>* list_item_time = &amp;modes_screen-&gt;<a class="code hl_variable" href="structui__modes__screen__t.html#a46b47438c20e3a472647a4a9dd52fd21">list_item_time</a>;</div>
 <div class="line"><span class="lineno">  119</span>    <a class="code hl_struct" href="structui__list__item__t.html">ui_list_item_t</a>* list_item_rpm  = &amp;modes_screen-&gt;<a class="code hl_variable" href="structui__modes__screen__t.html#a8e8024ed679c6377f74fe230815df21d">list_item_rpm</a>;</div>
 <div class="line"><span class="lineno">  120</span>    <a class="code hl_struct" href="structui__list__item__t.html">ui_list_item_t</a>* list_item_temp = &amp;modes_screen-&gt;<a class="code hl_variable" href="structui__modes__screen__t.html#a7a053ef57846cec6c744861ab580d77c">list_item_temp</a>;</div>
@@ -335,13 +335,13 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  154</span>    <a class="code hl_define" href="ui__slider_8h.html#a08be7f17e833ee063f450a9cfd922401">slider_auto_set_value</a>(list_item_temp_object);</div>
 <div class="line"><span class="lineno">  155</span>    <a class="code hl_define" href="ui__slider_8h.html#a0e02bc15214fa299444b5e5ca4d89c01">slider_suffix</a>(list_item_temp_object) = <span class="stringliteral">&quot;C&quot;</span>;</div>
 <div class="line"><span class="lineno">  156</span> </div>
-<div class="line"><span class="lineno">  157</span>    <a class="code hl_define" href="ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f">screens_data</a>().list_item_time_value = <a class="code hl_define" href="ui__slider__time_8h.html#a6f6824889faedac33578a4d6ebdc2ceb">slider_time_value</a>(list_item_time_object) * 60; <span class="comment">// slider_time.value = minuty, ale my chcemy wyświetlać na main_screen również sekundy</span></div>
+<div class="line"><span class="lineno">  157</span>    <a class="code hl_define" href="ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f">screens_data</a>().list_item_time_value = <a class="code hl_define" href="ui__slider__time_8h.html#a6f6824889faedac33578a4d6ebdc2ceb">slider_time_value</a>(list_item_time_object) * 60; <span class="comment">// slider_time.value has time in minutes, but we want to display seconds on the main_screen too, so we need to convert it to seconds by multiplying by 60</span></div>
 <div class="line"><span class="lineno">  158</span>    <a class="code hl_define" href="ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f">screens_data</a>().list_item_time_value_old = <a class="code hl_define" href="ui__slider__time_8h.html#a6f6824889faedac33578a4d6ebdc2ceb">slider_time_value</a>(list_item_time_object) * 60;</div>
 <div class="line"><span class="lineno">  159</span>    <a class="code hl_define" href="ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f">screens_data</a>().list_item_rpm_value  = <a class="code hl_define" href="ui__slider_8h.html#a1e571b94ae3f5efb5d824dc1998756a3">slider_value</a>(list_item_rpm_object);</div>
 <div class="line"><span class="lineno">  160</span>    <a class="code hl_define" href="ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f">screens_data</a>().list_item_temp_value = <a class="code hl_define" href="ui__slider_8h.html#a1e571b94ae3f5efb5d824dc1998756a3">slider_value</a>(list_item_temp_object);</div>
 <div class="line"><span class="lineno">  161</span> </div>
 <div class="line"><span class="lineno">  162</span> </div>
-<div class="line"><span class="lineno">  163</span>    <span class="comment">// Widgety - footer:</span></div>
+<div class="line"><span class="lineno">  163</span>    <span class="comment">// Footer widgets:</span></div>
 <div class="line"><span class="lineno">  164</span>    <a class="code hl_struct" href="structui__button__t.html">ui_button_t</a>* button_back = &amp;modes_screen-&gt;<a class="code hl_variable" href="structui__modes__screen__t.html#a2994eeb47c3523b4eea6e79368aaaf53">button_back</a>;</div>
 <div class="line"><span class="lineno">  165</span>    <a class="code hl_struct" href="structui__button__t.html">ui_button_t</a>* button_apply = &amp;modes_screen-&gt;<a class="code hl_variable" href="structui__modes__screen__t.html#a42946303e0a1a8bf91e21be6d7d26902">button_apply</a>;</div>
 <div class="line"><span class="lineno">  166</span> </div>
@@ -356,7 +356,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  175</span> </div>
 <div class="line"><span class="lineno">  176</span> </div>
 <div class="line"><span class="lineno">  177</span> </div>
-<div class="line"><span class="lineno">  178</span>    <span class="comment">// ============== LISTY LAYOUTU ================</span></div>
+<div class="line"><span class="lineno">  178</span>    <span class="comment">// ======== CONTAINERS WIDGETS LISTS ===========</span></div>
 <div class="line"><span class="lineno">  179</span> </div>
 <div class="line"><span class="lineno">  180</span>    <a class="code hl_typedef" href="ui__widget_8h.html#ad9c68a767345c58f808049494c5d0dee">ui_widget_t</a>* header_widgets[] = {</div>
 <div class="line"><span class="lineno">  181</span>        &amp;label-&gt;<a class="code hl_variable" href="structui__label__t.html#a900a4fcf666c4913ef9fbf608059cf6e">base</a></div>
@@ -387,7 +387,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  206</span> </div>
 <div class="line"><span class="lineno">  207</span> </div>
 <div class="line"><span class="lineno">  208</span> </div>
-<div class="line"><span class="lineno">  209</span>    <span class="comment">// ========== LISTA WIDGETÓW EKRANU ===========</span></div>
+<div class="line"><span class="lineno">  209</span>    <span class="comment">// =========== SCREEN WIDGETS LIST ============</span></div>
 <div class="line"><span class="lineno">  210</span> </div>
 <div class="line"><span class="lineno">  211</span>    <a class="code hl_typedef" href="ui__widget_8h.html#ad9c68a767345c58f808049494c5d0dee">ui_widget_t</a>* screen_widgets[] = {</div>
 <div class="line"><span class="lineno">  212</span>        &amp;<a class="code hl_define" href="ui__header_8h.html#a8409ab330912f9d1f752e98098e29468">header</a>-&gt;base.base.base,</div>
@@ -520,8 +520,12 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  236</span>        <a class="code hl_define" href="ui__slider__time_8h.html#aeb2299d773f051869d16d5dfc8748ac7">slider_time_auto_set_value</a>(list_item_time_object);</div>
 <div class="line"><span class="lineno">  237</span>    }</div>
 <div class="line"><span class="lineno">  238</span> </div>
-<div class="line"><span class="lineno">  239</span>    <a class="code hl_function" href="ui__screen__manager_8h.html#a0fce7b6d9a169dbed1e229758e68a7c9">ui_screen_manager_get_current_screen</a>()-&gt;<a class="code hl_variable" href="structui__screen.html#aa45b79884893c3f92b620cedbe23c6b2">base</a>.<a class="code hl_variable" href="structui__widget.html#a73816cf9959920ded7e3179f0521cea5">invalidated</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  240</span>}</div>
+<div class="line"><span class="lineno">  239</span>    <span class="comment">// We synchronized the screen state with the shared data by ui_screens_data,</span></div>
+<div class="line"><span class="lineno">  240</span>    <span class="comment">// so we need to mark the current screen as invalidated.</span></div>
+<div class="line"><span class="lineno">  241</span>    <span class="comment">// This tells the render loop that the screen has changed and must be redrawn.</span></div>
+<div class="line"><span class="lineno">  242</span>    <span class="comment">// Without this, widget value updates may stay in memory and not appear on the LCD.</span></div>
+<div class="line"><span class="lineno">  243</span>    <a class="code hl_function" href="ui__screen__manager_8h.html#a0fce7b6d9a169dbed1e229758e68a7c9">ui_screen_manager_get_current_screen</a>()-&gt;<a class="code hl_variable" href="structui__screen.html#aa45b79884893c3f92b620cedbe23c6b2">base</a>.<a class="code hl_variable" href="structui__widget.html#a73816cf9959920ded7e3179f0521cea5">invalidated</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  244</span>}</div>
 <div class="ttc" id="astructui__modes__screen__t_html"><div class="ttname"><a href="structui__modes__screen__t.html">ui_modes_screen_t</a></div><div class="ttdef"><b>Definition</b> <a href="ui__modes__screen_8h_source.html#l00023">ui_modes_screen.h:23</a></div></div>
 <div class="ttc" id="astructui__screen_html_aa45b79884893c3f92b620cedbe23c6b2"><div class="ttname"><a href="structui__screen.html#aa45b79884893c3f92b620cedbe23c6b2">ui_screen::base</a></div><div class="ttdeci">ui_widget_t base</div><div class="ttdef"><b>Definition</b> <a href="ui__screen_8h_source.html#l00053">ui_screen.h:53</a></div></div>
 <div class="ttc" id="astructui__slider__time__t_html_aea789331f752166a6f4d47b67cb92706"><div class="ttname"><a href="structui__slider__time__t.html#aea789331f752166a6f4d47b67cb92706">ui_slider_time_t::value</a></div><div class="ttdeci">int16_t value</div><div class="ttdef"><b>Definition</b> <a href="ui__slider__time_8h_source.html#l00080">ui_slider_time.h:80</a></div></div>

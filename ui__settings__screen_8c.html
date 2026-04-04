@@ -229,7 +229,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   47</span> </div>
 <div class="line"><span class="lineno">   48</span> </div>
 <div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    <span class="comment">// ================== EKRAN ===================</span></div>
+<div class="line"><span class="lineno">   50</span>    <span class="comment">// ================= SCREEN ===================</span></div>
 <div class="line"><span class="lineno">   51</span> </div>
 <div class="line"><span class="lineno">   52</span>    <a class="code hl_typedef" href="ui__screen_8h.html#a01422ebf40b1dd50ae756950c6641b1a">ui_screen_t</a>* screen = &amp;settings_screen-&gt;<a class="code hl_variable" href="structui__settings__screen__t.html#a47b497cc252001d7493639c151b155eb">base</a>;</div>
 <div class="line"><span class="lineno">   53</span>    <a class="code hl_function" href="ui__screen_8h.html#aeb890b00223a1e52911cb459d3f18169">ui_screen_init</a>(screen);</div>
@@ -264,7 +264,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   82</span>    <a class="code hl_define" href="ui__footer_8h.html#ab6f05fbe581a0cae8bacfad9d2ae677c">footer_spacing</a>(<a class="code hl_define" href="ui__footer_8h.html#a32664005999facc604ca64614af9d722">footer</a>) = 10;</div>
 <div class="line"><span class="lineno">   83</span> </div>
 <div class="line"><span class="lineno">   84</span> </div>
-<div class="line"><span class="lineno">   85</span>    <span class="comment">// ================= SEKTOR ===================</span></div>
+<div class="line"><span class="lineno">   85</span>    <span class="comment">// ================= SECTOR ===================</span></div>
 <div class="line"><span class="lineno">   86</span> </div>
 <div class="line"><span class="lineno">   87</span>    <a class="code hl_struct" href="structui__vbox__t.html">ui_vbox_t</a>* sector = &amp;settings_screen-&gt;<a class="code hl_variable" href="structui__settings__screen__t.html#a3c13ce90ac254c4f8e9b8487b47e1be3">sector</a>;</div>
 <div class="line"><span class="lineno">   88</span>    <a class="code hl_function" href="ui__vbox_8h.html#a217b3fb18f554d3f2aaed10d15453274">ui_vbox_init</a>(sector, 0, <a class="code hl_define" href="ui__header_8h.html#a8409ab330912f9d1f752e98098e29468">header</a>-&gt;base.base.base.height, <a class="code hl_define" href="lcd_8h.html#a19693eac3018d3e7800fde141921b812">LCD_WIDTH</a>, <a class="code hl_define" href="lcd_8h.html#a53a8b2a971de4b88047192655a48b651">LCD_HEIGHT</a> - <a class="code hl_define" href="ui__header_8h.html#a8409ab330912f9d1f752e98098e29468">header</a>-&gt;base.base.base.height - <a class="code hl_define" href="ui__footer_8h.html#a32664005999facc604ca64614af9d722">footer</a>-&gt;base.base.base.height);</div>
@@ -279,9 +279,9 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   97</span> </div>
 <div class="line"><span class="lineno">   98</span> </div>
 <div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>    <span class="comment">// ================= WIDGETY ===================</span></div>
+<div class="line"><span class="lineno">  100</span>    <span class="comment">// ================= WIDGETS ===================</span></div>
 <div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span>    <span class="comment">// Widgety - header:</span></div>
+<div class="line"><span class="lineno">  102</span>    <span class="comment">// Header widgets:</span></div>
 <div class="line"><span class="lineno">  103</span>    <a class="code hl_struct" href="structui__label__t.html">ui_label_t</a>* label = &amp;settings_screen-&gt;<a class="code hl_variable" href="structui__settings__screen__t.html#aa8f60fc00c64d9882b65518cf4bd3f53">label</a>;</div>
 <div class="line"><span class="lineno">  104</span> </div>
 <div class="line"><span class="lineno">  105</span>    <a class="code hl_function" href="ui__label_8h.html#ad13263b8e38ab3b6506a92c09f27f8a9">ui_label_init</a>(label, 0, 0, 100, 50);</div>
@@ -293,7 +293,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  111</span>    <a class="code hl_define" href="ui__label_8h.html#acb970cda6f7d9581514dec500302e8da">label_align_vertical</a>(label) = <a class="code hl_enumvalue" href="ui__align_8h.html#a454b2acded5837a9901d780353a33046a182eeb4cd3a2e1c562e12062e0bdab30">UI_ALIGN_CENTER_Y</a>;</div>
 <div class="line"><span class="lineno">  112</span> </div>
 <div class="line"><span class="lineno">  113</span> </div>
-<div class="line"><span class="lineno">  114</span>    <span class="comment">// Widgety - sector:</span></div>
+<div class="line"><span class="lineno">  114</span>    <span class="comment">// Sector widgets:</span></div>
 <div class="line"><span class="lineno">  115</span>    <a class="code hl_struct" href="structui__list__item__t.html">ui_list_item_t</a>* list_item_volume = &amp;settings_screen-&gt;<a class="code hl_variable" href="structui__settings__screen__t.html#a49e48efb9d39fb1e791f2a9e7b0689d4">list_item_volume</a>;</div>
 <div class="line"><span class="lineno">  116</span>    <a class="code hl_struct" href="structui__list__item__t.html">ui_list_item_t</a>* list_item_sound = &amp;settings_screen-&gt;<a class="code hl_variable" href="structui__settings__screen__t.html#a02dec8ae5becff3efadaeb9c54e97ced">list_item_sound</a>;</div>
 <div class="line"><span class="lineno">  117</span>    <a class="code hl_struct" href="structui__list__item__t.html">ui_list_item_t</a>* list_item_simulation = &amp;settings_screen-&gt;<a class="code hl_variable" href="structui__settings__screen__t.html#a275cd06c1be61ef5b38fd97cdb215356">list_item_simulation</a>;</div>
@@ -324,7 +324,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  142</span>    <a class="code hl_define" href="ui__screens__data_8h.html#a3f6b1122b5be8cfc79e37b476d27f53f">screens_data</a>().list_item_sim_value = <a class="code hl_define" href="ui__toggle_8h.html#a8bcd6af484edbe6438a195c3e553fec4">toggle_selected</a>(list_item_simulation_object);</div>
 <div class="line"><span class="lineno">  143</span> </div>
 <div class="line"><span class="lineno">  144</span> </div>
-<div class="line"><span class="lineno">  145</span>    <span class="comment">// Widgety - footer:</span></div>
+<div class="line"><span class="lineno">  145</span>    <span class="comment">// Footer widgets:</span></div>
 <div class="line"><span class="lineno">  146</span>    <a class="code hl_struct" href="structui__button__t.html">ui_button_t</a>* button_back = &amp;settings_screen-&gt;<a class="code hl_variable" href="structui__settings__screen__t.html#af1bbd824a7e20dbb4bc7493f9ca3ec2f">button_back</a>;</div>
 <div class="line"><span class="lineno">  147</span>    <a class="code hl_struct" href="structui__button__t.html">ui_button_t</a>* button_apply = &amp;settings_screen-&gt;<a class="code hl_variable" href="structui__settings__screen__t.html#acc6444a9d27521f1bc7bf44593128692">button_apply</a>;</div>
 <div class="line"><span class="lineno">  148</span> </div>
@@ -339,7 +339,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  157</span> </div>
 <div class="line"><span class="lineno">  158</span> </div>
 <div class="line"><span class="lineno">  159</span> </div>
-<div class="line"><span class="lineno">  160</span>    <span class="comment">// ============== LISTY LAYOUTU ================</span></div>
+<div class="line"><span class="lineno">  160</span>    <span class="comment">// ======== CONTAINERS WIDGETS LISTS ===========</span></div>
 <div class="line"><span class="lineno">  161</span> </div>
 <div class="line"><span class="lineno">  162</span>    <a class="code hl_typedef" href="ui__widget_8h.html#ad9c68a767345c58f808049494c5d0dee">ui_widget_t</a>* header_widgets[] = {</div>
 <div class="line"><span class="lineno">  163</span>        &amp;label-&gt;<a class="code hl_variable" href="structui__label__t.html#a900a4fcf666c4913ef9fbf608059cf6e">base</a></div>
@@ -370,7 +370,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  188</span> </div>
 <div class="line"><span class="lineno">  189</span> </div>
 <div class="line"><span class="lineno">  190</span> </div>
-<div class="line"><span class="lineno">  191</span>    <span class="comment">// ========== LISTA WIDGETÓW EKRANU ===========</span></div>
+<div class="line"><span class="lineno">  191</span>    <span class="comment">// =========== SCREEN WIDGETS LIST ============</span></div>
 <div class="line"><span class="lineno">  192</span> </div>
 <div class="line"><span class="lineno">  193</span>    <a class="code hl_typedef" href="ui__widget_8h.html#ad9c68a767345c58f808049494c5d0dee">ui_widget_t</a>* screen_widgets[] = {</div>
 <div class="line"><span class="lineno">  194</span>        &amp;<a class="code hl_define" href="ui__header_8h.html#a8409ab330912f9d1f752e98098e29468">header</a>-&gt;base.base.base,</div>

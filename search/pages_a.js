@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['screens_0',['🖥️ UI Screens',['../index.html#autotoc_md14',1,'']]],
-  ['setup_1',['Setup',['../index.html#autotoc_md16',1,'⚙️ Hardware Setup'],['../index.html#autotoc_md9',1,'Setup']]],
-  ['started_2',['🚀 Getting Started',['../index.html#autotoc_md7',1,'']]],
-  ['stm32_20embedded_20gui_20framework_3',['STM32 Embedded GUI Framework',['../index.html',1,'']]],
-  ['structure_4',['🏗️ Project Structure',['../index.html#autotoc_md5',1,'']]]
+  ['c_0',['c',['../md_pages_2create__screen.html#autotoc_md8',1,'3. Define screen implementation (.c)'],['../md_pages_2create__screen.html#autotoc_md13',1,'5. Initialize and register screen (main.c)']]],
+  ['c_20_3a_1',['Example (&lt;span class=&quot;tt&quot;&gt;ui_test_screen.c&lt;/span&gt;):',['../md_pages_2create__screen.html#autotoc_md9',1,'']]],
+  ['callbacks_2',['Handling input (callbacks)',['../md_pages_2create__screen.html#autotoc_md24',1,'']]],
+  ['contributing_3',['🤝 Contributing',['../index.html#autotoc_md48',1,'']]],
+  ['create_20screen_20files_4',['1. Create screen files',['../md_pages_2create__screen.html#autotoc_md3',1,'']]],
+  ['creating_20a_20new_20screen_5',['Creating a new screen',['../md_pages_2create__screen.html',1,'']]]
 ];

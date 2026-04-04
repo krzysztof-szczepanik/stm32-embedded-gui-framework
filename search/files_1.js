@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['joystick_2ec_0',['joystick.c',['../joystick_8c.html',1,'']]],
-  ['joystick_2eh_1',['joystick.h',['../joystick_8h.html',1,'']]]
+  ['hardware_5fio_2ec_0',['hardware_io.c',['../hardware__io_8c.html',1,'']]],
+  ['hardware_5fio_2eh_1',['hardware_io.h',['../hardware__io_8h.html',1,'']]]
 ];

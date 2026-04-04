@@ -25,21 +25,44 @@
 var NAVTREE =
 [
   [ "STM32 Embedded GUI Framework", "index.html", [
-    [ "📖 Description", "index.html#autotoc_md1", null ],
-    [ "✨ Features", "index.html#autotoc_md3", null ],
-    [ "🏗️ Project Structure", "index.html#autotoc_md5", null ],
-    [ "🚀 Getting Started", "index.html#autotoc_md7", [
-      [ "Requirements", "index.html#autotoc_md8", null ],
-      [ "Setup", "index.html#autotoc_md9", null ],
-      [ "Notes", "index.html#autotoc_md10", null ]
+    [ "📖 Description", "index.html#autotoc_md30", null ],
+    [ "✨ Features", "index.html#autotoc_md32", null ],
+    [ "🏗️ Project Structure", "index.html#autotoc_md34", null ],
+    [ "🚀 Getting Started", "index.html#autotoc_md36", [
+      [ "Requirements", "index.html#autotoc_md37", null ],
+      [ "Setup", "index.html#autotoc_md38", null ],
+      [ "Notes", "index.html#autotoc_md39", null ]
     ] ],
-    [ "🎬 Demo", "index.html#autotoc_md12", null ],
-    [ "🖥️ UI Screens", "index.html#autotoc_md14", null ],
-    [ "⚙️ Hardware Setup", "index.html#autotoc_md16", [
-      [ "Notes", "index.html#autotoc_md17", null ]
+    [ "🎬 Demo", "index.html#autotoc_md41", null ],
+    [ "🖥️ UI Screens", "index.html#autotoc_md43", null ],
+    [ "⚙️ Hardware Setup", "index.html#autotoc_md45", [
+      [ "Notes", "index.html#autotoc_md46", null ]
     ] ],
-    [ "🤝 Contributing", "index.html#autotoc_md19", null ],
-    [ "📄 License", "index.html#autotoc_md21", null ],
+    [ "🤝 Contributing", "index.html#autotoc_md48", null ],
+    [ "📄 License", "index.html#autotoc_md50", null ],
+    [ "Creating a new screen", "md_pages_2create__screen.html", [
+      [ "Description", "md_pages_2create__screen.html#autotoc_md1", null ],
+      [ "1. Create screen files", "md_pages_2create__screen.html#autotoc_md3", null ],
+      [ "2. Define screen structure (.h)", "md_pages_2create__screen.html#autotoc_md5", [
+        [ "Example Header (<span class=\"tt\">ui_test_screen.h</span>):", "md_pages_2create__screen.html#autotoc_md6", null ]
+      ] ],
+      [ "3. Define screen implementation (.c)", "md_pages_2create__screen.html#autotoc_md8", [
+        [ "Example (<span class=\"tt\">ui_test_screen.c</span>):", "md_pages_2create__screen.html#autotoc_md9", null ]
+      ] ],
+      [ "4. Register screen ID", "md_pages_2create__screen.html#autotoc_md11", null ],
+      [ "5. Initialize and register screen (main.c)", "md_pages_2create__screen.html#autotoc_md13", null ],
+      [ "6. Switch to screen", "md_pages_2create__screen.html#autotoc_md15", null ],
+      [ "7. Advanced / Optional", "md_pages_2create__screen.html#autotoc_md17", [
+        [ "Global screen access", "md_pages_2create__screen.html#autotoc_md19", null ],
+        [ "Shared data handling", "md_pages_2create__screen.html#autotoc_md21", [
+          [ "Example:", "md_pages_2create__screen.html#autotoc_md22", null ]
+        ] ],
+        [ "Handling input (callbacks)", "md_pages_2create__screen.html#autotoc_md24", null ]
+      ] ],
+      [ "8. Extra", "md_pages_2create__screen.html#autotoc_md26", [
+        [ "Screen Manager - how it works", "md_pages_2create__screen.html#autotoc_md27", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -66,11 +89,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"structui__main__screen__t.html",
-"ui__container_8h.html#acb5f34bf76b4dcc402b9deb17a3232e8",
-"ui__label_8h.html#a517eb17a9c18e21b30ba8c70d705441e",
-"ui__screen__manager_8c.html#a0fce7b6d9a169dbed1e229758e68a7c9",
-"ui__toggle_8h.html"
+"structui__label__value__t.html#ab3654dd5a7efe202daa35bde001ba9e0",
+"ui__container_8h.html#a78dea33ffc1b090f47ae533cac74b2e7",
+"ui__label_8c_source.html",
+"ui__screen_8h.html",
+"ui__theme_8h.html#ae365fd818c9faf24076ef4607bcb7972"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['features_0',['✨ Features',['../index.html#autotoc_md3',1,'']]],
-  ['framework_1',['STM32 Embedded GUI Framework',['../index.html',1,'']]]
+  ['4_20register_20screen_20id_0',['4. Register screen ID',['../md_pages_2create__screen.html#autotoc_md11',1,'']]]
 ];

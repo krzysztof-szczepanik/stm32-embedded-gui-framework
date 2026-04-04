@@ -1,25 +1,9 @@
 var searchData=
 [
-  ['joystick_2ec_0',['joystick.c',['../joystick_8c.html',1,'']]],
-  ['joystick_2eh_1',['joystick.h',['../joystick_8h.html',1,'']]],
-  ['joystick_5fclick_2',['JOYSTICK_CLICK',['../joystick_8h.html#ad65a41cf36ec41602fcdb1c22a5ad6bfa127ee4d109dd69f4ba1edf619affaed7',1,'joystick.h']]],
-  ['joystick_5fclick_5fedge_3',['JOYSTICK_CLICK_EDGE',['../joystick_8h.html#ad65a41cf36ec41602fcdb1c22a5ad6bfa6b370a37ae1afd81abd8e426c67ba84e',1,'joystick.h']]],
-  ['joystick_5fdown_4',['JOYSTICK_DOWN',['../joystick_8h.html#ad65a41cf36ec41602fcdb1c22a5ad6bfa39dc96253eaaf30978bee483f0fcc7e3',1,'joystick.h']]],
-  ['joystick_5fevent_5ft_5',['joystick_event_t',['../joystick_8h.html#ad65a41cf36ec41602fcdb1c22a5ad6bf',1,'joystick.h']]],
-  ['joystick_5fget_5fevent_6',['joystick_get_event',['../joystick_8h.html#aa82decf673ea57a859e00e94eb52cb4d',1,'joystick_get_event(void):&#160;joystick.c'],['../joystick_8c.html#aa82decf673ea57a859e00e94eb52cb4d',1,'joystick_get_event(void):&#160;joystick.c']]],
-  ['joystick_5fget_5fsw_7',['joystick_get_sw',['../joystick_8h.html#abda79f01d5774a503359b6c86616b308',1,'joystick_get_sw(void):&#160;joystick.c'],['../joystick_8c.html#abda79f01d5774a503359b6c86616b308',1,'joystick_get_sw(void):&#160;joystick.c']]],
-  ['joystick_5fget_5fvrx_8',['joystick_get_vrx',['../joystick_8h.html#a84ce530ac02bec8663714b33afcbebd7',1,'joystick_get_vrx(void):&#160;joystick.c'],['../joystick_8c.html#a84ce530ac02bec8663714b33afcbebd7',1,'joystick_get_vrx(void):&#160;joystick.c']]],
-  ['joystick_5fget_5fvry_9',['joystick_get_vry',['../joystick_8h.html#ac66d8def2f33626d2e21a2a6f67df6b3',1,'joystick_get_vry(void):&#160;joystick.c'],['../joystick_8c.html#ac66d8def2f33626d2e21a2a6f67df6b3',1,'joystick_get_vry(void):&#160;joystick.c']]],
-  ['joystick_5finit_10',['joystick_init',['../joystick_8h.html#a6a02aa5c938b511ffde7a43e8db031c8',1,'joystick_init(void):&#160;joystick.c'],['../joystick_8c.html#a6a02aa5c938b511ffde7a43e8db031c8',1,'joystick_init(void):&#160;joystick.c']]],
-  ['joystick_5finvalid_11',['JOYSTICK_INVALID',['../joystick_8h.html#ad65a41cf36ec41602fcdb1c22a5ad6bfaf3fa81d8323b345d66300a90d0c660a6',1,'joystick.h']]],
-  ['joystick_5fleft_12',['JOYSTICK_LEFT',['../joystick_8h.html#ad65a41cf36ec41602fcdb1c22a5ad6bfa867418ff8371cf9497ba8ed436e0ebf3',1,'joystick.h']]],
-  ['joystick_5fnone_13',['JOYSTICK_NONE',['../joystick_8h.html#ad65a41cf36ec41602fcdb1c22a5ad6bfaadb9a1724af4bc204dee9fc0793a6898',1,'joystick.h']]],
-  ['joystick_5fread_14',['joystick_read',['../joystick_8h.html#a8b8d069f631ca41339f5c5b91b660a47',1,'joystick_read(void):&#160;joystick.c'],['../joystick_8c.html#a8b8d069f631ca41339f5c5b91b660a47',1,'joystick_read(void):&#160;joystick.c']]],
-  ['joystick_5fright_15',['JOYSTICK_RIGHT',['../joystick_8h.html#ad65a41cf36ec41602fcdb1c22a5ad6bfa529afbf47abb82d495f3c4e7c22eefae',1,'joystick.h']]],
-  ['joystick_5fsw_16',['joystick_sw',['../joystick_8c.html#af39b3effa8976623a486545318ba0395',1,'joystick.c']]],
-  ['joystick_5fthreshold_5fhigh_17',['JOYSTICK_THRESHOLD_HIGH',['../joystick_8c.html#a0f74713a6e95e3c9ed0f304c362f76bf',1,'joystick.c']]],
-  ['joystick_5fthreshold_5flow_18',['JOYSTICK_THRESHOLD_LOW',['../joystick_8c.html#ac75977b7dcc1146cf9bd029b1f504a19',1,'joystick.c']]],
-  ['joystick_5fup_19',['JOYSTICK_UP',['../joystick_8h.html#ad65a41cf36ec41602fcdb1c22a5ad6bfa50768334177f1121514b999d9f6b0c11',1,'joystick.h']]],
-  ['joystick_5fvrx_20',['joystick_vrx',['../joystick_8c.html#a2ea8d7d54ebd06b1a889804cc869b12e',1,'joystick.c']]],
-  ['joystick_5fvry_21',['joystick_vry',['../joystick_8c.html#a0e70700f488cf4a6e16e490174b01020',1,'joystick.c']]]
+  ['a_20new_20screen_0',['Creating a new screen',['../md_pages_2create__screen.html',1,'']]],
+  ['access_1',['Global screen access',['../md_pages_2create__screen.html#autotoc_md19',1,'']]],
+  ['advanced_20optional_2',['7. Advanced / Optional',['../md_pages_2create__screen.html#autotoc_md17',1,'']]],
+  ['align_5fhorizontal_3',['align_horizontal',['../structui__hbox__t.html#ae34c1fc94a29faea340e804e659e8dcf',1,'ui_hbox_t::align_horizontal'],['../structui__vbox__t.html#ae81f7246eca696032e02bf2b7ec23edb',1,'ui_vbox_t::align_horizontal'],['../structui__label__t.html#a1567844bc81a391407e35152579fb1c7',1,'ui_label_t::align_horizontal']]],
+  ['align_5fvertical_4',['align_vertical',['../structui__hbox__t.html#a032b38421b13c116a23714ad9ca96a9d',1,'ui_hbox_t::align_vertical'],['../structui__vbox__t.html#ab181ad8d9faf53f07615dd07794445f3',1,'ui_vbox_t::align_vertical'],['../structui__label__t.html#a0d44fa0b4d7a826c2055160200f9d55b',1,'ui_label_t::align_vertical']]],
+  ['and_20register_20screen_20main_20c_5',['5. Initialize and register screen (main.c)',['../md_pages_2create__screen.html#autotoc_md13',1,'']]]
 ];

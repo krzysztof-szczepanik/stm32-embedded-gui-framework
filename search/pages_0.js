@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['contributing_0',['🤝 Contributing',['../index.html#autotoc_md19',1,'']]]
+  ['1_20create_20screen_20files_0',['1. Create screen files',['../md_pages_2create__screen.html#autotoc_md3',1,'']]]
 ];

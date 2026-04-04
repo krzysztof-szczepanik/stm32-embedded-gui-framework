@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x_0',['x',['../structui__widget.html#a11c1e2d16dfa5172efd0f24ba9167aae',1,'ui_widget']]]
+  ['new_20screen_0',['Creating a new screen',['../md_pages_2create__screen.html',1,'']]],
+  ['notes_1',['Notes',['../index.html#autotoc_md39',1,'Notes'],['../index.html#autotoc_md46',1,'Notes']]]
 ];
