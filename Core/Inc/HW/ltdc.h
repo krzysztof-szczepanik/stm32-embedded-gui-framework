@@ -19,10 +19,6 @@
  ******************************************************************************
  */
 
-/** @addtogroup ltdc
- * @{
- */
-
 #ifndef LTDC_H
 #define LTDC_H
 
@@ -41,5 +37,3 @@
 extern LTDC_HandleTypeDef hltdc;
 
 #endif /* HW_LTDC_H */
-
-/** @} */ // ltdc

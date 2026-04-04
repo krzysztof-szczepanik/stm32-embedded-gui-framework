@@ -21,10 +21,6 @@
  ******************************************************************************
  */
 
-/** @addtogroup lcd_buffer
- * @{
- */
-
 #ifndef LCD_BUFFER_H
 #define LCD_BUFFER_H
 
@@ -58,5 +54,3 @@ void lcd_buffer_init(void);
 void lcd_swap_buffers(void);
 
 #endif /* LCD_BUFFER_H */
-
-/** @} */ // lcd_buffer

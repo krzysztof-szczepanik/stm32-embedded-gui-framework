@@ -20,10 +20,6 @@
  ******************************************************************************
  */
 
-/** @addtogroup tim
- * @{
- */
-
 #ifndef TIM_H
 #define TIM_H
 
@@ -50,5 +46,3 @@ extern TIM_HandleTypeDef htim9;
 extern volatile bool timer_tick;
 
 #endif /* TIM_H */
-
-/** @} */ // tim

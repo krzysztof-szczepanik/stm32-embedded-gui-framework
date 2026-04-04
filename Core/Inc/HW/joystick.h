@@ -20,10 +20,6 @@
  ******************************************************************************
  */
 
-/** @addtogroup HW
- * @{
- */
-
 #ifndef JOYSTICK_H
 #define JOYSTICK_H
 
@@ -83,5 +79,3 @@ uint16_t joystick_get_vry(void);
 uint8_t joystick_get_sw(void);
 
 #endif /* JOYSTICK_H */
-
-/** @} */ // joystick

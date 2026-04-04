@@ -19,10 +19,6 @@
  ******************************************************************************
  */
 
-/** @addtogroup HW
- * @{
- */
-
 #ifndef HARDWARE_IO_H
 #define HARDWARE_IO_H
 
@@ -62,5 +58,3 @@ uint16_t read_adc(uint8_t channel);
 uint8_t read_gpio_pin(GPIO_TypeDef *port, uint16_t pin);
 
 #endif /* HARDWARE_IO_H */
-
-/** @} */ // hardware_io

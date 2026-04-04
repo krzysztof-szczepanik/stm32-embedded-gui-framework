@@ -1032,7 +1032,6 @@ INPUT                  = ../Core/Inc/HW \
                          ../Core/Src/Render \
                          ../Core/Inc/UI \
                          ../Core/Src/UI \
-                         groups \
                          pages
                          
 # This tag can be used to specify the character encoding of the source files

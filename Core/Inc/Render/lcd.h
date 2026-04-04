@@ -26,10 +26,6 @@
  ******************************************************************************
  */
 
-/** @addtogroup lcd
- * @{
- */
-
 #ifndef LCD_H
 #define LCD_H
 
@@ -142,5 +138,3 @@ void lcd_clear(uint32_t color);
 void lcd_select_layer(lcd_layer_t layer);
 
 #endif /* LCD_H */
-
-/** @} */ // lcd
