@@ -47,7 +47,7 @@ void ui_settings_screen_init(ui_settings_screen_t* settings_screen) {
 
 
 
-	// ================== EKRAN ===================
+	// ================= SCREEN ===================
 
 	ui_screen_t* screen = &settings_screen->base;
 	ui_screen_init(screen);
@@ -82,7 +82,7 @@ void ui_settings_screen_init(ui_settings_screen_t* settings_screen) {
 	footer_spacing(footer) = 10;
 
 
-	// ================= SEKTOR ===================
+	// ================= SECTOR ===================
 
 	ui_vbox_t* sector = &settings_screen->sector;
 	ui_vbox_init(sector, 0, header->base.base.base.height, LCD_WIDTH, LCD_HEIGHT - header->base.base.base.height - footer->base.base.base.height);
@@ -97,9 +97,9 @@ void ui_settings_screen_init(ui_settings_screen_t* settings_screen) {
 
 
 
-	// ================= WIDGETY ===================
+	// ================= WIDGETS ===================
 
-	// Widgety - header:
+	// Header widgets:
 	ui_label_t* label = &settings_screen->label;
 
 	ui_label_init(label, 0, 0, 100, 50);
@@ -111,7 +111,7 @@ void ui_settings_screen_init(ui_settings_screen_t* settings_screen) {
 	label_align_vertical(label) = UI_ALIGN_CENTER_Y;
 
 
-	// Widgety - sector:
+	// Sector widgets:
 	ui_list_item_t* list_item_volume = &settings_screen->list_item_volume;
 	ui_list_item_t* list_item_sound = &settings_screen->list_item_sound;
 	ui_list_item_t* list_item_simulation = &settings_screen->list_item_simulation;
@@ -142,7 +142,7 @@ void ui_settings_screen_init(ui_settings_screen_t* settings_screen) {
 	screens_data().list_item_sim_value = toggle_selected(list_item_simulation_object);
 
 
-	// Widgety - footer:
+	// Footer widgets:
 	ui_button_t* button_back = &settings_screen->button_back;
 	ui_button_t* button_apply = &settings_screen->button_apply;
 
@@ -157,7 +157,7 @@ void ui_settings_screen_init(ui_settings_screen_t* settings_screen) {
 
 
 
-	// ============== LISTY LAYOUTU ================
+	// ======== CONTAINERS WIDGETS LISTS ===========
 
 	ui_widget_t* header_widgets[] = {
 		&label->base
@@ -188,7 +188,7 @@ void ui_settings_screen_init(ui_settings_screen_t* settings_screen) {
 
 
 
-	// ========== LISTA WIDGETÓW EKRANU ===========
+	// =========== SCREEN WIDGETS LIST ============
 
 	ui_widget_t* screen_widgets[] = {
 		&header->base.base.base,

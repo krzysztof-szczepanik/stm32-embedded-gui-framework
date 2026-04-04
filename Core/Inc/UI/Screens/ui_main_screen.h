@@ -23,23 +23,23 @@
 typedef struct {
     ui_screen_t base;
 
-    // Sekcje:
+    // Sections:
     ui_header_t header;
     ui_footer_t footer;
     ui_vbox_t sector;
 
-	// Widgety - header:
+	// Header widgets:
     ui_button_t button_modes;
     ui_button_t button_settings;
 
-    // Widgety - sector:
+    // Sector widgets:
     ui_progress_bar_t progress_bar;
     ui_vbox_t vbox;
     ui_label_value_t label_value_time;
     ui_label_value_t label_value_rpm;
     ui_label_value_t label_value_temp;
 
-	// Widgety - footer:
+	// Footer widgets:
     ui_button_t button_start_stop;
     ui_button_t button_reset;
 } ui_main_screen_t;
@@ -66,7 +66,7 @@ void ui_main_screen_update_time();
 
 // ===================== MACROS ======================
 
-// Rzutowanie:
+// Casting:
 #define MAIN_SCREEN(screen) ((ui_main_screen_t*)(screen))
 
 #endif /* UI_MAIN_SCREEN_H */

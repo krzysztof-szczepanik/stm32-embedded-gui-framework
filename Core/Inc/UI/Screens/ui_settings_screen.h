@@ -23,20 +23,20 @@
 typedef struct {
     ui_screen_t base;
 
-    // Sekcje:
+    // Sections:
     ui_header_t header;
     ui_footer_t footer;
     ui_vbox_t sector;
 
-    // Widgety - header:
+    // Header widgets:
     ui_label_t label;
 
-    // Widgety - sector:
+    // Sector widgets:
 	ui_list_item_t list_item_volume;
 	ui_list_item_t list_item_sound;
 	ui_list_item_t list_item_simulation;
 
-	// Widgety - footer:
+	// Footer widgets:
     ui_button_t button_back;
     ui_button_t button_apply;
 } ui_settings_screen_t;

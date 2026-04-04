@@ -40,7 +40,7 @@ static bool button_start_stop_clicked(void) {
 	ui_button_t* button_reset = &main_screen->button_reset;
 
 	if (*timer_state == TIMER_STOPPED) {
-		// Zmiana stanu timera:
+		// Change timer state:
 		*timer_state = TIMER_RUNNING;
 
 		label_text_format(button_start_stop_label, "STOP");
@@ -52,10 +52,10 @@ static bool button_start_stop_clicked(void) {
 
 		button_focusable(button_reset) = false;
 
-		// Uruchomienie timera sprzętowego:
+		// Start the hardware timer:
 		HAL_TIM_Base_Start_IT(&htim9);
 	} else {
-		// Zmiana stanu timera:
+		// Change timer state:
 		*timer_state = TIMER_STOPPED;
 
 		label_text_format(button_start_stop_label, "START");
@@ -67,7 +67,7 @@ static bool button_start_stop_clicked(void) {
 
 		button_focusable(button_reset) = true;
 
-		// Zatrzymanie timera sprzętowego:
+		// Stop the hardware timer:
 		HAL_TIM_Base_Stop_IT(&htim9);
 	}
 
@@ -108,7 +108,7 @@ void ui_main_screen_init(ui_main_screen_t* main_screen) {
 	screens_data().timer_state = TIMER_STOPPED;
 
 
-	// ================== EKRAN ===================
+	// ================= SCREEN ===================
 
 	ui_screen_t* screen = &main_screen->base;
 	ui_screen_init(screen);
@@ -145,7 +145,7 @@ void ui_main_screen_init(ui_main_screen_t* main_screen) {
 	footer_stretch(footer) = UI_STRETCH_HEIGHT;
 
 
-	// ================= SEKTOR ===================
+	// ================= SECTOR ===================
 
 	ui_vbox_t* sector = &main_screen->sector;
 	ui_vbox_init(sector, 0, header->base.base.base.height, LCD_WIDTH, LCD_HEIGHT - header->base.base.base.height - footer->base.base.base.height);
@@ -161,9 +161,9 @@ void ui_main_screen_init(ui_main_screen_t* main_screen) {
 
 
 
-	// ================= WIDGETY ===================
+	// ================= WIDGETS ===================
 
-	// Widgety - header:
+	// Header widgets:
 	ui_button_t* button_modes = &main_screen->button_modes;
 	ui_button_t* button_settings = &main_screen->button_settings;
 
@@ -176,7 +176,7 @@ void ui_main_screen_init(ui_main_screen_t* main_screen) {
 	button_on_click(button_settings) = button_settings_clicked;
 
 
-	// Widgety - sector:
+	// Sector widgets:
 	ui_progress_bar_t* progress_bar = &main_screen->progress_bar;
 	ui_vbox_t* vbox = &main_screen->vbox;
 	ui_label_value_t* label_value_time = &main_screen->label_value_time;
@@ -218,7 +218,7 @@ void ui_main_screen_init(ui_main_screen_t* main_screen) {
 	label_text_format(label_value_temp_right_label, "%dC", screens_data().list_item_temp_value);
 
 
-	// Widgety - footer:
+	// Footer widgets:
 	ui_button_t* button_start_stop = &main_screen->button_start_stop;
 	ui_button_t* button_reset = &main_screen->button_reset;
 
@@ -245,7 +245,7 @@ void ui_main_screen_init(ui_main_screen_t* main_screen) {
 
 
 
-	// ============== LISTY LAYOUTU ================
+	// ======== CONTAINERS WIDGETS LISTS ===========
 
 	ui_widget_t* vbox_widgets[] = {
 		&label_value_time->base,
@@ -286,7 +286,7 @@ void ui_main_screen_init(ui_main_screen_t* main_screen) {
 
 
 
-	// ========== LISTA WIDGETÓW EKRANU ===========
+	// =========== SCREEN WIDGETS LIST ============
 
 	ui_widget_t* screen_widgets[] = {
 		&header->base.base.base,
@@ -317,6 +317,10 @@ void ui_main_screen_update_data(ui_screen_t* screen) {
     label_text_format(label_value_temp_right_label, "%dC",   screens_data().list_item_temp_value);
     label_text_format(label_value_time_right_label, "%02d:%02d:%02d", screens_data().list_item_time_value / 3600, (screens_data().list_item_time_value % 3600) / 60, screens_data().list_item_time_value % 60);
 
+	// We synchronized the screen state with the shared data by ui_screens_data,
+	// so we need to mark the current screen as invalidated.
+	// This tells the render loop that the screen has changed and must be redrawn.
+	// Without this, widget value updates may stay in memory and not appear on the LCD.
     ui_screen_manager_get_current_screen()->base.invalidated = true;
 }
 
@@ -341,7 +345,7 @@ void ui_main_screen_update_time() {
 	int32_t time_remaining = screens_data().list_item_time_value;
 	int32_t time_total = screens_data().list_item_time_value_old;
 
-    // Aktualizacja tekstu czasu:
+	// Update time text:
     label_text_format(label_value_time_right_label, "%02d:%02d:%02d", time_remaining / 3600, (time_remaining % 3600) / 60, time_remaining % 60);
 
 
@@ -351,10 +355,10 @@ void ui_main_screen_update_time() {
 
     if (time_total > 0) {
 
-    	int32_t elapsed = time_total - time_remaining; // ile minęło
+    	int32_t elapsed = time_total - time_remaining; // how many seconds have passed since the timer started
 
     	float ratio = (float)elapsed  / (float)time_total; // 0.0 - 1.0
-    	int32_t progress = (int32_t)(ratio * 100.0f); // zamiana na 0-100%
+    	int32_t progress = (int32_t)(ratio * 100.0f); // conversion to 0-100%
 
     	if (progress < 0) { progress = 0; }
     	if (progress > 100) { progress = 100; }
@@ -369,5 +373,9 @@ void ui_main_screen_update_time() {
     	ui_main_screen_timer_finished();
     }
 
+	// We synchronized the screen state with the shared data by ui_screens_data,
+	// so we need to mark the current screen as invalidated.
+	// This tells the render loop that the screen has changed and must be redrawn.
+	// Without this, widget value updates may stay in memory and not appear on the LCD.
     ui_screen_manager_get_current_screen()->base.invalidated = true;
 }

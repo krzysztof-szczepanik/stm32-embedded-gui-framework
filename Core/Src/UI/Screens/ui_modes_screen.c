@@ -31,7 +31,7 @@ static bool button_apply_clicked(void) {
 	ui_slider_t* slider_rpm = (ui_slider_t*)list_item_object(list_item_rpm);
 	ui_slider_t* slider_temp = (ui_slider_t*)list_item_object(list_item_temp);
 
-	screens_data().list_item_time_value = slider_time_value(slider_time) * 60; // slider_time.value = minuty, ale my chcemy wyświetlać na main_screen również sekundy
+	screens_data().list_item_time_value = slider_time_value(slider_time) * 60; // slider_time.value has time in minutes, but we want to display seconds on the main_screen too, so we need to convert it to seconds by multiplying by 60
 	screens_data().list_item_time_value_old = slider_time_value(slider_time) * 60;
 	screens_data().list_item_rpm_value = slider_value(slider_rpm);
 	screens_data().list_item_temp_value = slider_value(slider_temp);
@@ -48,7 +48,7 @@ void ui_modes_screen_init(ui_modes_screen_t* modes_screen) {
 	g_modes_screen = modes_screen;
 
 
-	// ================== EKRAN ===================
+	// ================= SCREEN ===================
 
 	ui_screen_t* screen = &modes_screen->base;
 	ui_screen_init(screen);
@@ -85,7 +85,7 @@ void ui_modes_screen_init(ui_modes_screen_t* modes_screen) {
 	footer_spacing(footer) = 10;
 
 
-	// ================= SEKTOR ===================
+	// ================= SECTOR ===================
 
 	ui_vbox_t* sector = &modes_screen->sector;
 	ui_vbox_init(sector, 0, header->base.base.base.height, LCD_WIDTH, LCD_HEIGHT - header->base.base.base.height - footer->base.base.base.height);
@@ -100,9 +100,9 @@ void ui_modes_screen_init(ui_modes_screen_t* modes_screen) {
 
 
 
-	// ================= WIDGETY ===================
+	// ================= WIDGETS ===================
 
-	// Widgety - header:
+	// Header widgets:
 	ui_label_t* label = &modes_screen->label;
 
 	ui_label_init(label, 0, 0, 100, 50);
@@ -114,7 +114,7 @@ void ui_modes_screen_init(ui_modes_screen_t* modes_screen) {
 	label_align_vertical(label) = UI_ALIGN_CENTER_Y;
 
 
-	// Widgety - sector:
+	// Sector widgets:
 	ui_list_item_t* list_item_time = &modes_screen->list_item_time;
 	ui_list_item_t* list_item_rpm  = &modes_screen->list_item_rpm;
 	ui_list_item_t* list_item_temp = &modes_screen->list_item_temp;
@@ -154,13 +154,13 @@ void ui_modes_screen_init(ui_modes_screen_t* modes_screen) {
 	slider_auto_set_value(list_item_temp_object);
 	slider_suffix(list_item_temp_object) = "C";
 
-	screens_data().list_item_time_value = slider_time_value(list_item_time_object) * 60; // slider_time.value = minuty, ale my chcemy wyświetlać na main_screen również sekundy
+	screens_data().list_item_time_value = slider_time_value(list_item_time_object) * 60; // slider_time.value has time in minutes, but we want to display seconds on the main_screen too, so we need to convert it to seconds by multiplying by 60
 	screens_data().list_item_time_value_old = slider_time_value(list_item_time_object) * 60;
 	screens_data().list_item_rpm_value  = slider_value(list_item_rpm_object);
 	screens_data().list_item_temp_value = slider_value(list_item_temp_object);
 
 
-	// Widgety - footer:
+	// Footer widgets:
 	ui_button_t* button_back = &modes_screen->button_back;
 	ui_button_t* button_apply = &modes_screen->button_apply;
 
@@ -175,7 +175,7 @@ void ui_modes_screen_init(ui_modes_screen_t* modes_screen) {
 
 
 
-	// ============== LISTY LAYOUTU ================
+	// ======== CONTAINERS WIDGETS LISTS ===========
 
 	ui_widget_t* header_widgets[] = {
 		&label->base
@@ -206,7 +206,7 @@ void ui_modes_screen_init(ui_modes_screen_t* modes_screen) {
 
 
 
-	// ========== LISTA WIDGETÓW EKRANU ===========
+	// =========== SCREEN WIDGETS LIST ============
 
 	ui_widget_t* screen_widgets[] = {
 		&header->base.base.base,
@@ -236,5 +236,9 @@ void ui_modes_screen_update_data(ui_screen_t* screen) {
         slider_time_auto_set_value(list_item_time_object);
     }
 
+	// We synchronized the screen state with the shared data by ui_screens_data,
+	// so we need to mark the current screen as invalidated.
+	// This tells the render loop that the screen has changed and must be redrawn.
+	// Without this, widget value updates may stay in memory and not appear on the LCD.
     ui_screen_manager_get_current_screen()->base.invalidated = true;
 }

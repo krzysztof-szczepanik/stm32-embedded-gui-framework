@@ -23,20 +23,20 @@
 typedef struct {
     ui_screen_t base;
 
-    // Sekcje:
+    // Sections:
     ui_header_t header;
     ui_footer_t footer;
     ui_vbox_t sector;
 
-    // Widgety - header:
+    // Header widgets:
     ui_label_t label;
 
-    // Widegty - sector:
+    // Sector widgets:
 	ui_list_item_t list_item_time;
 	ui_list_item_t list_item_rpm;
 	ui_list_item_t list_item_temp;
 
-	// Widgety - footer:
+	// Footer widgets:
     ui_button_t button_back;
     ui_button_t button_apply;
 } ui_modes_screen_t;
@@ -57,7 +57,7 @@ void ui_modes_screen_update_data(ui_screen_t* screen);
 
 // ===================== MACROS ======================
 
-// Rzutowanie:
+// Casting:
 #define MODES_SCREEN(screen) ((ui_modes_screen_t*)(screen))
 
 #endif /* UI_MODES_SCREEN_H */
